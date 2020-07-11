@@ -3,7 +3,7 @@
       <div class="col">
         <div class="header">
           <header>
-              <h1 class="shadow">Inspire Cresdativity</h1>
+              <h1 class="shadow">Inspire Creativity</h1>
           </header>
 
         <q-btn
