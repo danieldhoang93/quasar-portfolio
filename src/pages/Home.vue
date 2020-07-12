@@ -335,7 +335,7 @@ p {
 }
 
     h1 {
-      font-size: 4em;
+      font-size: 3em;
       margin-top: 3.5em;
     }
 
