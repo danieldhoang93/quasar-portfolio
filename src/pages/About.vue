@@ -3,7 +3,7 @@
      <header>
         <h1 class="aboutHeader shadow">About Me</h1>
      </header>
-     <img src="~/assets/head.png" class="flex inline circle flex-center shadow-24g">
+     <img src="~/assets/head.png" class="flex inline circle flex-center shadow-24">
 
 <p class="bodyfont padding">I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
 software development, and leveraging my creativity and skills to create unquestionable value</p>
