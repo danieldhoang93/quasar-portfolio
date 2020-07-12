@@ -47,7 +47,7 @@
 
         <img src="~/assets/head.png" class="circle shadow-24">
 <div class="shadow2">
-       <p class="shadow2"><br><br>I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
+       <p class="shadow2"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
       software development, translating business requirements into high quality solutions by leveraging my creativity and skillset to create unquestionable value.</p>
 
 <p>

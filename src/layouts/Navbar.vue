@@ -4,7 +4,7 @@
     reveal >
       <q-toolbar>
         <q-toolbar-title class="headerFont text-weight-thin q-ml-sm">
-          <router-link to="/" class="headerFont">Daniel Hoang</router-link>
+          <router-link to="/" class="headerFont">DDH</router-link>
         </q-toolbar-title>
 
         <q-btn
@@ -95,41 +95,41 @@ export default {
 <style lang="scss">
 
 .q-drawer {
-    background: rgba(0, 0, 0, 0.00);
+  background: rgba(0, 0, 0, 0.00);
   .q-router-link--exact-active{
-    color:#000202fb!important;
-    font-weight:normal;
+  color:#000202fb!important;
+  font-weight:normal;
   }
 }
 
 @media screen and (min-width: 768px) {
-.q-btn.smallWindow {
+  .q-btn.smallWindow {
     display:none;
-  }
+    }
   .navPadding {
-      padding: 9px;
+    padding: 9px;
   }
 }
 
 @media screen and (max-width: 768px) {
- .q-btn.smallWindow {
-    display:all;
-  }
-  .navPadding {
+  .q-btn.smallWindow {
+      display:all;
+    }
+    .navPadding {
       padding: 2em;
-  }
+    }
 }
 
 .headerFont, .navFont{
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-decoration: none;
-    color:white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color:white;
 }
 
 .iconPadding {
-  margin-top:7px;
-  margin-right:12px;
+    margin-top:7px;
+    margin-right:12px;
 }
 </style>
