@@ -351,7 +351,7 @@ p {
 }
 
     h1 {
-      font-size: 3.3em;
+      font-size: 3em;
       margin-top: 26vh;
     }
 
