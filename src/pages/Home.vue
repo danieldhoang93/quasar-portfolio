@@ -319,7 +319,7 @@ p {
 }
 
     h1 {
-      font-size: 6em;
+      font-size: 5em;
       margin-top: 4em;
     }
 
@@ -335,7 +335,7 @@ p {
 }
 
     h1 {
-      font-size: 3em;
+      font-size: 4em;
       margin-top: 3.5em;
     }
 
