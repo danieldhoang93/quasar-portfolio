@@ -6,33 +6,6 @@
 <p class="specialLine"></p>
         <q-card-section>
             <div class="row">
-                <div class="col-12 col-md-4 backgroundColor">
-                    <h2>Skills to Pay the Bills</h2>
-                    ◾ PeopleCode ◾ T-SQL
-                    ◾ Oracle SQL ◾ Mongo DB
-                    ◾ GraphQL ◾ HTML
-                    ◾ CSS ◾ Vue.Js
-                    ◾ Nuxt.Js ◾ REST API
-                    ◾ Node.Js ◾ Deno
-                    ◾ AWS ◾ Firebase
-                    ◾ Semantic UI ◾ Tailwind
-                    ◾ C# ◾ Python
-                    ◾ Basic ◾ C++
-                    ◾ Java ◾ .Net
-                    ◾ Jira ◾Git
-                    ◾ UI Path ◾SSIS
-                    ◾ Visual Studio/Code
-                    ◾ SQL Server Management Studio
-                    ◾ Microsoft Office
-                    ◾ Team Foundation Server
-                    ◾ Automate Task Builder 
-
-                    <h1>Education</h1>
-                    <p>Virginia Commonwealth University<br>
-                    Bachelor of Science in
-                    Information Systems, 2016
-                    </p>
-                </div>
                 <div class="col-12 col-md-8">
                     <h2 class="text-center bigger">Who Is This Guy?!</h2>
                     <p>
@@ -125,8 +98,33 @@
                     ▪ Mentored and lead junior developers by performing code reviews,
                     backseat programming, and training them in SQL and RPA tools<br>
                     </p>
-                    
-                    
+                </div>
+                <div class="col-12 col-md-4 backgroundColor">
+                    <h2>Skills to Pay the Bills</h2>
+                    ◾ PeopleCode ◾ T-SQL
+                    ◾ Oracle SQL ◾ Mongo DB
+                    ◾ GraphQL ◾ HTML
+                    ◾ CSS ◾ Vue.Js
+                    ◾ Nuxt.Js ◾ REST API
+                    ◾ Node.Js ◾ Deno
+                    ◾ AWS ◾ Firebase
+                    ◾ Semantic UI ◾ Tailwind
+                    ◾ C# ◾ Python
+                    ◾ Basic ◾ C++
+                    ◾ Java ◾ .Net
+                    ◾ Jira ◾Git
+                    ◾ UI Path ◾SSIS
+                    ◾ Visual Studio/Code
+                    ◾ SQL Server Management Studio
+                    ◾ Microsoft Office
+                    ◾ Team Foundation Server
+                    ◾ Automate Task Builder 
+
+                    <h1>Education</h1>
+                    <p>Virginia Commonwealth University<br>
+                    Bachelor of Science in
+                    Information Systems, 2016
+                    </p>
                 </div>
             </div>
         </q-card-section>
@@ -135,7 +133,6 @@
           <q-btn flat label="Close" color="purple-4" v-close-popup />
         </q-card-actions>
   </div>
-   
 </template>
 
 
