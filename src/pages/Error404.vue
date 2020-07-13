@@ -27,7 +27,7 @@ export default {
 
 <style>
 .background404 {
-  background: linear-gradient(311deg, #b000c0, #20003d, #1600dd);
+  background: linear-gradient(311deg, #6d0077, #20003d, #0d007e);
     background-size: 200% 200%;
 
     -webkit-animation: AnimationName 10s ease infinite;

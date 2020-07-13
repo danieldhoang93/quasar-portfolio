@@ -74,12 +74,12 @@ export default {
         {
           title: 'About',
           icon: 'account_circle',
-          link: '/about'
+          link: '/'
         },
         {
           title: 'Contact',
           icon: 'alternate_email',
-          link: '/contact'
+          link: '/'
         },
         {
           title: 'Sign In',
