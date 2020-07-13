@@ -19,10 +19,11 @@
 
         <q-btn
             flat
-            round  
+            round
             text-color="white"
             size="xl"
             class="icon"
+            href="https://www.linkedin.com/in/ddhoang/"
             >
             <img src="~/assets/linkedin.png" class="shrinkSVGicon">
             <q-tooltip content-class="bg-primary toolTipText">Linkedin</q-tooltip>
@@ -55,122 +56,9 @@
 </p><br>
 
 <q-btn label="View Resume" color="white text-purple" @click="fixed = true" class="shadow-20" />
-<q-dialog v-model="fixed">
-    <q-card style="width: 70vw; max-width: 100vw;">
-        <q-card-section class="row text-center q-pb-none">
-            <h2 class="text-h6">Daniel Hoang</h2>
-            <!--<q-space />-->
-            <q-btn icon="close" flat round dense v-close-popup />
-        </q-card-section>
-        
-
-        <q-card-section style="max-height: 85vh">
-           <div class="row">
-                <div class="col-12 col-md-3">
-                    Skills to
-                    Pay the
-                    Bills
-                    ◾ PeopleCode ◾ T-SQL
-                    ◾ Oracle SQL ◾ Mongo DB
-                    ◾ GraphQL ◾ HTML
-                    ◾ CSS ◾ Vue.Js
-                    ◾ Nuxt.Js ◾ REST API
-                    ◾ Node.Js ◾ Deno
-                    ◾ AWS ◾ Firebase
-                    ◾ Semantic UI ◾ Tailwind
-                    ◾ C# ◾ Python
-                    ◾ Basic ◾ C++
-                    ◾ Java ◾ .Net
-                    ◾ Jira ◾Git
-                    ◾ UI Path ◾SSIS
-                    ◾ Visual Studio/Code
-                    ◾ SQL Server Management Studio
-                    ◾ Microsoft Office
-                    ◾ Team Foundation Server
-                    ◾ Automate Task Builder 
-                </div>
-                <div class="col-12 col-md-9">
-                    Who is this guy?!
-                    ▪ Creative developer with 4 years of demonstrated ability to excel in agile
-                    software development
-                    ▪ Deep understanding of SQL and relational data models, writing complex
-                    T-SQL and Oracle queries, procedures, functions, etc.
-                    ▪ Solid Grasp in Object Oriented Programming languages
-                    ▪ A strong desire to expand knowledge in other areas of development, such
-                    as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.
-                    4 Years of Development Experience
-                    Na Ali’i
-                    Technical Developer I July 2018 - Current
-                    Peoplesoft
-                    ▪ Developed frontend using Peoplecode that interfaced with backend
-                    solutions using Oracle SQL to satisfy the client’s business requirements
-                    ▪ Worked with analysts and architects to convert business requirements
-                    and data mappings into a solution
-                    ▪ Designed flex layouts for both mobile and webapp displays of our
-                    product using HTML and CSS
-                    ▪ Unit tested and documented my own work by migrating projects
-                    and data mover scripts between a sandbox environment and
-                    development environment before pushing code through to the QA
-                    environment
-                    ▪ Held live presentations of our work at the end of every sprint to gather
-                    feedback and showcase high quality, working software
-                    ▪ Redeveloped work based on client feedback received during sprint
-                    reviews to be demonstrated during the following review
-                    ▪ Assisted others through peer review, unit tests, debugging, and
-                    brainstorming solutions
-                    ▪ Worked tasks and defects in an agile manner, which were managed
-                    through JIRA
-                    Advanced Patient Advocacy
-                    Programmer Analyst December 2016 - July 2018
-                    Junior Programmer Analyst April 2016 - December 2016
-                    Robotic Process Automation
-                    ▪ Solely responsible for all aspects of a major Robotic Process
-                    Automation project, named “DEX” which removed the need for tedious
-                    and manual labor by automating the extraction of business-critical data
-                    from client’s systems. The project continues to provide higher and
-                    more accurate realization of revenue than manual labor would, at $25
-                    million as of 7/2018
-                    ▪ Created technical documentation while requirements gathering, and
-                    high level/low level workflows of process to be automated
-                    ▪ Programmed a dozen scalable solutions, Desktop and RDP, which
-                    precisely navigated and captured data by means such as keystrokes,
-                    OCR, image capturing, etc. in conjunction with complex logic
-                    ▪ Masterminded my own robot orchestrator within SSMS which sends
-                    email alerts, logging, robot wrangling, and data distribution
-                    ▪ Developed a deployment and training plan, trained end users, and
-                    provided continuous monitoring and support
-                    ▪ Met with customers and client managers on a weekly basis to discuss
-                    possible business rule changes and manage expectations
-                    SQL
-                    ▪ Wrote complex and optimized queries, stored procedures, and functions
-                    ▪ Created, tested, deployed, and maintained SQL Server jobs, SSIS
-                    packages, and normalized databases
-                    ▪ Responsible for analyzing and understanding current databases to build,
-                    modify, test, and debug scripts containing complex business logic
-                    ▪ Built, tested, deployed, and provided continuous maintenance to
-                    hundreds of import/export SSIS EDI solutions that involved various
-                    file types and structures ranging from delimited .txt files to hierarchical
-                    .xml files
-                    C#
-                    ▪ Developed a multithreaded system tray tool using Windows
-                    Presentation Foundation forms, allowing users to report telephone or
-                    internet connectivity issues
-                    ▪ Collected data was inserted into the database using Windows
-                    Communication Foundation services, or momentarily stored locally
-                    using JSON serialization if the internet was down
-                    ▪ Gathered statistics over time and used to push back against service
-                    providers and receive better services
-                    Miscellaneous
-                    ▪ Monitored the status of an integration system and all file paths
-                    involved, ensuring constant uptime of file imports
-                    ▪ Resolved problems issued through tickets, and ensured the customer
-                    received satisfactory support and follow-up
-                    ▪ Mentored and lead junior developers by performing code reviews,
-                    backseat programming, and training them in SQL and RPA tools
-                </div>
-    </div>
-    </q-card-section>
-
+    <q-dialog v-model="fixed">  
+      <q-card class="resumeSize">
+        <Resume></Resume>
       </q-card>
     </q-dialog>
 </div>
@@ -188,7 +76,12 @@
 </template>
 
 <script>
+import Resume from 'components/Resume.vue' 
+
 export default {
+  components: {
+    Resume
+  },
   data () {
     return {
       fixed: false
@@ -202,25 +95,16 @@ export default {
   padding-right:110px;
   background: rgba(86, 61, 124, .00);
 }
- 
-.row > div {
- padding: 10px 15px;
-  border: 1px solid rgba(86,61,124,.2);
- }
-
-.row + .row{
-  margin-top: 1rem;
-}
-
-
-.doc-container > div + div {
-  margin-top: 1rem;
-}
 
  .shrinkSVGicon {
     width: 35px;
     color:white;
 } 
+
+.resumeSize {
+  height:90vh;
+  max-width:70vw;
+}
 
 .icon {
     -webkit-filter: drop-shadow( 10px 15px 10px rgba(0, 0, 0, .3));
@@ -258,11 +142,6 @@ h1 {
     font-weight: 100;
     color:white;
     margin-top:2em;
-}
-
-h2 {
-     font-size: 100px;
-     text-align: center;
 }
 
 h5 {
@@ -325,7 +204,15 @@ p {
 
     .icon {
      margin-left:1em;
-}
+    }
+
+    .resumeSize {
+      height: 100%;
+      max-width:96%;
+      position: fixed;
+      margin-left: 2px;
+      margin-right: 8px;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -341,7 +228,9 @@ p {
 
     .icon {
      margin-left:1em;
-}
+    }
+
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -356,8 +245,15 @@ p {
     }
 
     .icon {
-     margin-left:1em;
-}
+      margin-left:1em;
+    }
+
+    .resumeSize {
+      height: 100%;
+      max-width:100%;
+      position: fixed;
+      left: 0;
+    }
 }
 
 @keyframes fadeinout {
