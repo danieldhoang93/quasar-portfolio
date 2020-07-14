@@ -72,16 +72,6 @@ export default {
           link: '/'
         },
         {
-          title: 'About',
-          icon: 'account_circle',
-          link: '/404'
-        },
-        {
-          title: 'Contact',
-          icon: 'alternate_email',
-          link: '/404'
-        },
-        {
           title: 'Sign In',
           icon: 'login',
           link: '/404'

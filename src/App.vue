@@ -16,9 +16,9 @@ export default {
     background: linear-gradient(311deg, #fb9d00, #9c32ff, #0affc0);
     background-size: 200% 200%;
 
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {

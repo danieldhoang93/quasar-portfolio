@@ -1,10 +1,16 @@
 <template>
-    <div>
-        <q-card-section class="row text-center justify-center q-pb-none">
-            <h2>Daniel Hoang</h2>
+    <div class="backgroundColor">
+        <section>
+            <q-card-section class="text-center q-pb-none">
+            <div class="headerText">
+                <h1>Daniel Hoang</h1>
+            </div>
         </q-card-section>
-<p class="specialLine"></p>
-        <q-card-section>
+        <div class="subhead text-center">{{ dateTime }}</div>
+        </section>
+        
+        
+        <q-card-section class="resumePadding">
             <div class="row">
                 <div class="col-12 col-md-8">
                     <h2 class="text-center bigger">Who Is This Guy?!</h2>
@@ -18,7 +24,7 @@
                         as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.<br>
                     </p>
                     
-                    <h2 class="text-center">4 Years of Development Experience</h2>
+                    <h2 class="text-center italic">4 Years of Development Experience</h2>
                     <h5>Na Ali’i</h5>
                     <p>Technical Developer I<br>July 2018 - Current</p>
                     <div>
@@ -99,8 +105,9 @@
                     backseat programming, and training them in SQL and RPA tools<br>
                     </p>
                 </div>
-                <div class="col-12 col-md-4 backgroundColor">
+                <div class="col-12 col-md-4 resumePadding">
                     <h2>Skills to Pay the Bills</h2>
+                    <p>
                     ◾ PeopleCode ◾ T-SQL
                     ◾ Oracle SQL ◾ Mongo DB
                     ◾ GraphQL ◾ HTML
@@ -119,8 +126,9 @@
                     ◾ Microsoft Office
                     ◾ Team Foundation Server
                     ◾ Automate Task Builder 
+                    </p>
 
-                    <h1>Education</h1>
+                    <h2>Education</h2>
                     <p>Virginia Commonwealth University<br>
                     Bachelor of Science in
                     Information Systems, 2016
@@ -135,20 +143,39 @@
   </div>
 </template>
 
-
+<script>
+export default {
+  data () {
+    return {
+      dateTime: new Date()
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
 
-.row > div {
+.row > div:nth-child(1) {
  padding: 10px 15px;
+ border-right: 1px solid #2f2f2f;
  }
 
  .backgroundColor{
- padding: 10px 15px;
-  background-color: rgba(155, 155, 155, 0.2);
+    padding: 10px 15px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
  }
 
-.row + .row{
-  margin-top: 1rem;
+ .resumePadding {
+     padding-right: 4px;
+    padding-left: 4px;
+ }
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
 }
 
 .specialLine
@@ -156,23 +183,37 @@
     border-top: 2px solid black;
     height: 20px;
     border-bottom: 2px solid black;
+    text-align:center;
 }
 
 .doc-container > div + div {
   margin-top: 1rem;
 }
 
-.doubleUnderlined {
-  border-bottom: double 3px;
-}
-
 h1 {
-    margin-bottom:1px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
 
 h2 {
      font-size: 100px;
+     margin-top:20px;
      margin-bottom:50px;
+     line-height: 1em;
+     font-weight:7px;
+     font-family: 'Playfair Display', serif;
+    
+}
+
+ .italic{
+    font-weight: 400;
+    font-style: italic;
 }
 
 h3 {
@@ -183,6 +224,14 @@ h5 {
      margin-bottom:10px;
 }
 
+p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+
+
 
 @media screen and (max-width: 1830px) {
     h2 {
@@ -191,7 +240,7 @@ h5 {
     }
 
     h1 {
-    font-size: 70px;
+    font-size: 100px;
     margin-bottom:20px;
     }
 }
@@ -203,7 +252,7 @@ h5 {
     }
 
     h1 {
-    font-size: 65px;
+    font-size: 85px;
     margin-bottom:20px;
     }
 }
@@ -215,7 +264,7 @@ h5 {
     }
 
     h1 {
-    font-size: 60px;
+    font-size: 75px;
     margin-bottom:20px;
     }
 }
@@ -227,10 +276,21 @@ h5 {
     }
 
     h1 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom:1px;
     }
     
+}
+
+@media screen and (max-width: 1025px) {
+    h2 {
+     font-size: 70px;
+     margin-bottom:50px;
+    }
+   .row > div:nth-child(1) {
+ padding: 10px 15px;
+ border-right:0px;
+ }
 }
 
 @media screen and (max-width: 690px) {
@@ -238,7 +298,10 @@ h5 {
      font-size: 70px;
      margin-bottom:50px;
     }
-
+   .row > div:nth-child(1) {
+ padding: 10px 15px;
+ border-right:0px;
+ }
 }
 
 @media screen and (max-width: 640px) {
@@ -246,5 +309,14 @@ h5 {
      font-size: 70px;
      margin-bottom:50px;
     }
+
+    h1 {
+        font-size:80px;
+    }
+
+.resumePadding {
+     padding-right: 1px;
+    padding-left: 1px;
+ }
 }
 </style>

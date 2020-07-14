@@ -1,7 +1,7 @@
 <template>
   <div class="fullscreen text-center q-pa-md flex flex-center background404">
     <div>
-      <h1 style="font-size: 25vh" class="shadow">
+      <h1 class="shadow">
         404 :(
       </h1>
 
@@ -27,7 +27,7 @@ export default {
 
 <style>
 .background404 {
-  background: linear-gradient(311deg, #6d0077, #20003d, #0d007e);
+  background: linear-gradient(311deg, #00ff95, #4a00f7, #ff7300);
     background-size: 200% 200%;
 
     -webkit-animation: AnimationName 10s ease infinite;
@@ -36,7 +36,7 @@ export default {
 }
 
 h1 {
-  font-size: 100px;
+  font-size:20vw;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 100;
@@ -65,4 +65,5 @@ h1 {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
 </style>
