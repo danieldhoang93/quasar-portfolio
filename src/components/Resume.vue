@@ -325,8 +325,28 @@ p {
 }
 
 @media screen and (max-width: 640px) {
+    h1 {
+     font-size: 75px;
+    }
+
     h2 {
      font-size: 65px;
+     margin-bottom:50px;
+    }
+
+.resumePadding {
+    padding-right: 1px;
+    padding-left: 1px;
+ }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+     font-size: 65px;
+    }
+
+    h2 {
+     font-size: 55px;
      margin-bottom:50px;
     }
 

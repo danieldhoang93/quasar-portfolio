@@ -203,7 +203,7 @@ h1 {
     .resumeSize {
     height:100vh;
     width:900px;
-    max-width:90vw;
+    max-width:99vw;
     position: fixed;
 }
 }
