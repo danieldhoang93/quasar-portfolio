@@ -131,7 +131,7 @@ export default {
 
 .resumeSize {
    height:100vh;
-    width:950px;
+    width:1150px;
     max-width:100vw;
     position: fixed;
 }

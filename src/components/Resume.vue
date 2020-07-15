@@ -41,7 +41,7 @@
                         <div class="col-12 col-md-6"><img class="media fit" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy-downsized.gif" alt=""></div>
                     </div>
 
-                    <h2 class="text-weight-bolder italic">4 Years of <span class="text-weight-bolder">Development</span> Experience</h2>   
+                    <h2 class="text-weight-bolder italic removeBottomPadding">4 Years of <span class="text-weight-bolder">Development</span> Experience</h2>   
                     
                     <h5 class="removeBottomPadding">Na Ali’i</h5>
                     <div class="q-pb-xl">
@@ -223,7 +223,7 @@ h1 {
 }
 
 h2 {
-    font-size: 100px;
+    font-size: 90px;
     margin-top:10px;
     line-height: 1em;
     font-family: 'Playfair Display', serif;
@@ -316,7 +316,7 @@ p {
     }
 
     img.headerText {
-    height: 15vw;
+    height: 20vw;
     }
 }
 
