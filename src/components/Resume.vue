@@ -44,12 +44,9 @@
                     <h2 class="text-weight-bolder italic">4 Years of <span class="text-weight-bolder">Development</span> Experience</h2>   
                     
                     <h5 class="removeBottomPadding">Na Ali’i</h5>
-                    <div class="row q-pb-md">
-                        <div class="col-12 col-md-8">Technical Developer I</div>
-                        <div class="col-12 col-md-4 text-right">July 2018 - Current</div>
-                    </div>
-                    <div>
-                        
+                    <div class="q-pb-xl">
+                        <div style="float:left;">Technical Developer I</div>
+                        <div style="float:right;">July 2018 - Current</div>
                     </div>
                     <p>Peoplesoft
                         <br>
@@ -73,11 +70,10 @@
                     through JIRA
                     </p>
                     
-                    
                     <h5 class="removeBottomPadding">Advanced Patient Advocacy</h5>
-                    <div class="row  q-pb-md">
-                        <div class="col-12 col-md-8">Programmer Analyst</div>
-                        <div class="col-12 col-md-4 text-right">April 2016 - July 2018</div>
+                    <div class="q-pb-xl">
+                        <div style="float:left;">Programmer Analyst</div>
+                        <div style="float:right;">April 2016 - July 2018</div>
                     </div>
                     
                     <p>Robotic Process Automation<br>
