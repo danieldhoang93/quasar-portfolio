@@ -105,7 +105,7 @@ export default {
 
 .header {
     width:100%;
-    height: 95vh;
+    height: 90vh;
     position:relative;
 
     .headerStuff {
@@ -130,8 +130,10 @@ export default {
 }
 
 .resumeSize {
-  height:90vh;
-  max-width:70vw;
+   height:100vh;
+    width:950px;
+    max-width:100vw;
+    position: fixed;
 }
 
 .contactSection {
@@ -183,6 +185,8 @@ h1 {
     h1 {
         font-size:13vh;
     }
+
+
 }
 
 
@@ -191,13 +195,16 @@ h1 {
     padding-left:10px;
     padding-right:10px;
     }
+
     h1 {
         font-size:7vh;
     }
 
     .resumeSize {
-  height:100vh;
-  max-width:100vw;
+    height:100vh;
+    width:900px;
+    max-width:90vw;
+    position: fixed;
 }
 }
 

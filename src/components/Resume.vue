@@ -2,31 +2,52 @@
     <div class="backgroundColor">
         <section>
             <q-card-section class="text-center q-pb-none">
-            <div class="headerText">
-                <h1>Daniel Hoang</h1>
+                <div>
+                    <img class="headerText" src="~/assets/daniel.png"><img class="headerText"  src="~/assets/hoang.png">
+                </div>
+            </q-card-section>
+        <div class="subhead text-center">
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    {{new Date().toLocaleString()}}
+                </div>
+                <div class="col">
+                    
+                </div>
             </div>
-        </q-card-section>
-        <div class="subhead text-center">{{ dateTime }}</div>
+        </div>
         </section>
         
         
         <q-card-section class="resumePadding">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <h2 class="text-center bigger">Who Is This Guy?!</h2>
-                    <p>
-                        ▪ Creative developer with 4 years of demonstrated ability to excel in agile
-                        software development<br>
-                        ▪ Deep understanding of SQL and relational data models, writing complex
-                        T-SQL and Oracle queries, procedures, functions, etc.<br>
-                        ▪ Solid Grasp in Object Oriented Programming languages<br>
-                        ▪ A strong desire to expand knowledge in other areas of development, such
-                        as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.<br>
-                    </p>
+            <div class="row ">
+                <div class="col-12 col-md-8 split">
+                    <h1 class="text-center text-weight-bolder">Who Is This Guy?!</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p>
+                                ▪ Creative developer with 4 years of demonstrated ability to excel in agile
+                                software development<br>
+                                ▪ Deep understanding of SQL and relational data models, writing complex
+                                T-SQL and Oracle queries, procedures, functions, etc.<br>
+                                ▪ Solid Grasp in Object Oriented Programming languages<br>
+                                ▪ A strong desire to expand knowledge in other areas of development, such
+                                as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.<br>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6"><img class="media fit" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy-downsized.gif" alt=""></div>
+                    </div>
+
+                    <h2 class="text-weight-bolder italic">4 Years of <span class="text-weight-bolder">Development</span> Experience</h2>   
                     
-                    <h2 class="text-center italic">4 Years of Development Experience</h2>
-                    <h5>Na Ali’i</h5>
-                    <p>Technical Developer I<br>July 2018 - Current</p>
+                    <h5 class="removeBottomPadding">Na Ali’i</h5>
+                    <div class="row q-pb-md">
+                        <div class="col-12 col-md-8">Technical Developer I</div>
+                        <div class="col-12 col-md-4 text-right">July 2018 - Current</div>
+                    </div>
                     <div>
                         
                     </div>
@@ -53,8 +74,12 @@
                     </p>
                     
                     
-                    <h5>Advanced Patient Advocacy</h5>
-                    <p>Programmer Analyst<br>April 2016 - July 2018</p>
+                    <h5 class="removeBottomPadding">Advanced Patient Advocacy</h5>
+                    <div class="row  q-pb-md">
+                        <div class="col-12 col-md-8">Programmer Analyst</div>
+                        <div class="col-12 col-md-4 text-right">April 2016 - July 2018</div>
+                    </div>
+                    
                     <p>Robotic Process Automation<br>
                     ▪ Solely responsible for all aspects of a major Robotic Process
                     Automation project, named “DEX” which removed the need for tedious
@@ -106,7 +131,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-4 resumePadding">
-                    <h2>Skills to Pay the Bills</h2>
+                    <h2 class="text-weight-bolder removeBottomPadding">Skills to Pay The Bills</h2>
                     <p>
                     ◾ PeopleCode ◾ T-SQL
                     ◾ Oracle SQL ◾ Mongo DB
@@ -128,22 +153,32 @@
                     ◾ Automate Task Builder 
                     </p>
 
-                    <h2>Education</h2>
-                    <p>Virginia Commonwealth University<br>
-                    Bachelor of Science in
-                    Information Systems, 2016
-                    </p>
+                    <div>
+                        <h2 class="removeBottomPadding">Education</h2>
+                        <p>Virginia Commonwealth University<br>
+                        Bachelor of Science in
+                        Information Systems, 2016
+                        </p>
+                        <br><br>
+                        <img class="media" src="https://media.giphy.com/media/eGxIG4IVFCL7oOGMnV/giphy-downsized.gif" alt="">
+                    </div>
+                    
                 </div>
             </div>
         </q-card-section>
-        <p class="specialLine"></p>
-        <q-card-actions align="right">
-          <q-btn flat label="Close" color="purple-4" v-close-popup />
+
+        <div class="subhead text-center">
+            <q-card-actions ns align="center">
+            <q-btn flat label="Close" color="purple-4" v-close-popup />
         </q-card-actions>
+        </div>
+        <br><br>
+        
   </div>
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -153,41 +188,31 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
-.row > div:nth-child(1) {
+.row > div.split {
  padding: 10px 15px;
- border-right: 1px solid #2f2f2f;
+ border-right: 2px solid #2f2f2f;
  }
 
- .backgroundColor{
-    padding: 10px 15px;
+.backgroundColor{
     color: #2f2f2f;
-    background-color: #f9f7f1;
- }
+    background-image: url("~assets/newspaper.jpg");
+    background-size: stretch;
+}
 
- .resumePadding {
-     padding-right: 4px;
+img.headerText {
+    height: 10vw;
+}
+
+.resumePadding {
+    padding-right: 4px;
     padding-left: 4px;
- }
+}
 
 .subhead{
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
-    padding: 12px 0 12px 0;
-
-}
-
-.specialLine
-{
-    border-top: 2px solid black;
-    height: 20px;
-    border-bottom: 2px solid black;
-    text-align:center;
-}
-
-.doc-container > div + div {
-  margin-top: 1rem;
+    
 }
 
 h1 {
@@ -202,16 +227,14 @@ h1 {
 }
 
 h2 {
-     font-size: 100px;
-     margin-top:20px;
-     margin-bottom:50px;
-     line-height: 1em;
-     font-weight:7px;
-     font-family: 'Playfair Display', serif;
-    
+    font-size: 100px;
+    margin-top:10px;
+    line-height: 1em;
+    font-family: 'Playfair Display', serif;
+    color: #2f2f2f;
 }
 
- .italic{
+.italic{
     font-weight: 400;
     font-style: italic;
 }
@@ -228,10 +251,17 @@ p {
     font-family: 'Droid Serif', serif;
     font-size: 16px;
     color: #2f2f2f;
-    background-color: #f9f7f1;
 }
 
-
+.removeBottomPadding {
+    margin-bottom:1px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
 
 @media screen and (max-width: 1830px) {
     h2 {
@@ -251,10 +281,6 @@ p {
      margin-bottom:50px;
     }
 
-    h1 {
-    font-size: 85px;
-    margin-bottom:20px;
-    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -262,22 +288,12 @@ p {
      font-size: 75px;
      margin-bottom:50px;
     }
-
-    h1 {
-    font-size: 75px;
-    margin-bottom:20px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
     h2 {
      font-size: 75px;
      margin-bottom:50px;
-    }
-
-    h1 {
-    font-size: 60px;
-    margin-bottom:1px;
     }
     
 }
@@ -299,23 +315,23 @@ p {
      margin-bottom:50px;
     }
    .row > div:nth-child(1) {
- padding: 10px 15px;
- border-right:0px;
- }
+    padding: 10px 15px;
+    border-right:0px;
+    }
+
+    img.headerText {
+    height: 15vw;
+    }
 }
 
 @media screen and (max-width: 640px) {
     h2 {
-     font-size: 70px;
+     font-size: 65px;
      margin-bottom:50px;
     }
 
-    h1 {
-        font-size:80px;
-    }
-
 .resumePadding {
-     padding-right: 1px;
+    padding-right: 1px;
     padding-left: 1px;
  }
 }
