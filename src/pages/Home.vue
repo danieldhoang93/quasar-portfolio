@@ -104,6 +104,12 @@ export default {
     }
 }
 
+.button {
+  -webkit-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
+  -moz-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
+}
+
 .aboutSection {
     width:100%;
     text-align:center;
@@ -171,10 +177,7 @@ h1 {
     h1 {
         font-size:13vh;
     }
-
-
 }
-
 
 @media screen and (max-width: 550px) {
     .padding {

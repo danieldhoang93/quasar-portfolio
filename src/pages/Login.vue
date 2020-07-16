@@ -1,7 +1,7 @@
 <template>
   <div class="col elementToFadeInAndOut text-center header">
-    <div class="signIn text-center headerStuff">
-      <h1 class="shadow">DDH</h1>
+    <div class="signIn text-center headerStuff shadows">
+      <h1>DDH</h1>
       <div class="inner">
         <q-input v-model="text" label="Email" :dense="dense" dark/>
         <q-input v-model="ph" label="Password" hint="" :dense="dense" dark/>
@@ -10,7 +10,7 @@
       <q-checkbox v-model="remember" label="Remember Me" style="float:left;" dark class="text-white rememberBox"/>
 
       <div class="q-py-md inner">
-        <q-btn label="Sign In" color="white text-purple" @click="signIn = true" class="shadow-20 signInBtn"/>
+        <q-btn label="Sign In" color="white text-purple" @click="signIn = true" class="signInBtn"/>
       </div>
       
 
@@ -86,6 +86,13 @@ div.signIn {
   margin-left: auto;
   margin-right: auto;
   display:block;
+  
+}
+
+.shadows{
+  -webkit-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
+  -moz-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
   
 }
 
