@@ -1,5 +1,5 @@
 <template>
-    <main class="">
+    <main>
         <section>
             <div class="col elementToFadeInAndOut">
                 <div class="main-message header">

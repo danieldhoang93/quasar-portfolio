@@ -56,5 +56,15 @@ export default {
 .padding {
     padding-right: 4em;
     padding-left: 4em;
-    }
+}
+
+.elementToFadeInAndOut {
+    animation: fadeinout 5s linear forwards;
+}	
+
+@keyframes fadeinout {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    90% { opacity: 1; }
+}
 </style>

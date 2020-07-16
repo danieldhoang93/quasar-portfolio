@@ -74,7 +74,7 @@ export default {
         {
           title: 'Sign In',
           icon: 'login',
-          link: '/404'
+          link: '/login'
         }
       ]
     }
