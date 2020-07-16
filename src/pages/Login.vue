@@ -4,7 +4,7 @@
       <h1 class="shadow">DDH</h1>
       <div class="inner">
         <q-input v-model="text" label="Email" :dense="dense" dark/>
-        <q-input v-model="ph" label="Password" placeholder="Placeholder" hint="" :dense="dense" dark/>
+        <q-input v-model="ph" label="Password" hint="" :dense="dense" dark/>
       </div>
       
       <q-checkbox v-model="remember" label="Remember Me" style="float:left;" dark class="text-white rememberBox"/>
