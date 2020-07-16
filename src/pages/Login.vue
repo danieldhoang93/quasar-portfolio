@@ -1,6 +1,5 @@
 <template>
   <div class="col elementToFadeInAndOut text-center header">
-    
     <div class="signIn text-center headerStuff">
       <h1 class="shadow">DDH</h1>
       <div class="inner">
@@ -15,16 +14,15 @@
       </div>
       
 
-  <div>
-    <div style="float:left;">
-      <q-btn padding="sm" flat color="white" label="Register"/>
-    </div>
+      <div>
+        <div style="float:left;">
+          <q-btn padding="sm" flat color="white" label="Register"/>
+        </div>
 
-    <q-btn padding="sm" flat color="white" label="Forgot Password" style="float:right;"/>
+        <q-btn padding="sm" flat color="white" label="Forgot Password" style="float:right;"/>
+      </div>
+    </div>
   </div>
-        
-  </div>
-</div>
 </template>
 
 <script>
@@ -78,11 +76,13 @@ h1 {
     font-weight: 100;
     color:white; 
     line-height: 1em;
+    margin-bottom:10px;
+    margin-top:10px;
 }
 
 div.signIn {
   width:25vw;
-  min-width:350px;
+  min-width:300px;
   margin-left: auto;
   margin-right: auto;
   display:block;
