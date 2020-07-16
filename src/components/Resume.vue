@@ -23,11 +23,11 @@
         
         
         <q-card-section class="resumePadding">
-            <div class="row ">
+            <div class="row">
                 <div class="col-12 col-md-8 split">
                     <h1 class="text-center text-weight-bolder">Who Is This Guy?!</h1>
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-9">
                             <p>
                                 ▪ Creative developer with 4 years of demonstrated ability to excel in agile
                                 software development<br>
@@ -38,7 +38,7 @@
                                 as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.<br>
                             </p>
                         </div>
-                        <div class="col-12 col-md-6"><img class="media fit" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy-downsized.gif" alt=""></div>
+                        <div class="col-12 col-md-3"><img class="media fit" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy-downsized.gif" alt=""></div>
                     </div>
 
                     <h2 class="text-weight-bolder italic removeBottomPadding">4 Years of <span class="text-weight-bolder">Development</span> Experience</h2>   
@@ -159,10 +159,18 @@
                         <img class="media" src="https://media.giphy.com/media/eGxIG4IVFCL7oOGMnV/giphy-downsized.gif" alt="">
                     </div>
                     
+                    <div class="col-12 col-md-4 resumePadding text-center">
+                        <h3 class="text-weight-bolder removeBottomPadding">
+                            Clearance
+                        </h3>
+                        <h5 class="italic">Public Trust</h5>
+                    </div>
                 </div>
             </div>
-        </q-card-section>
 
+            
+        </q-card-section>
+    
         <div class="subhead text-center">
             <q-card-actions ns align="center">
             <q-btn flat label="Close" color="purple-4" v-close-popup />
@@ -236,7 +244,7 @@ h2 {
 }
 
 h3 {
-     font-size: 80px;
+     font-size: 60px;
 }
 
 h5 {
@@ -252,11 +260,16 @@ p {
 .removeBottomPadding {
     margin-bottom:1px;
 }
+
 .media {
     -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
     mix-blend-mode: multiply;
     width: 100%;
+    max-width:35em;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
 }
 
 @media screen and (max-width: 1830px) {

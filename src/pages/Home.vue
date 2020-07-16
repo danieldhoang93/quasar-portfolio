@@ -4,39 +4,25 @@
             <div class="col elementToFadeInAndOut">
                 <div class="main-message header">
                     <div class="headerStuff">
-                        <h1>Inspire Creativity</h1>
-                        <q-btn
-                            flat
-                            round  
+                        <h1 class="shadow">Inspire Creativity</h1>
+                        <a   flat
+                            round
                             text-color="white"
-                            size="xl"
-                            class="icon"
-                            >
+                            href="https://github.com/danieldhoang93/danieldhoang93.github.io" 
+                            class="button q-pa-lg"> 
                             <img src="~/assets/github.png" class="shrinkSVGicon">
-                            <q-tooltip content-class="bg-primary toolTipText">Git Hub</q-tooltip>
-                        </q-btn>
+                            <q-tooltip content-class="bg-primary toolTipText">GitHub</q-tooltip>
+                          </a>
 
-                        <q-btn
-                            flat
+                          <a   flat
                             round
                             text-color="white"
                             size="xl"
-                            class="icon"
-                            href="https://www.linkedin.com/in/ddhoang/"
-                            >
+                            href="https://www.linkedin.com/in/ddhoang/" 
+                            class="button q-pa-lg"> 
                             <img src="~/assets/linkedin.png" class="shrinkSVGicon">
                             <q-tooltip content-class="bg-primary toolTipText">Linkedin</q-tooltip>
-                        </q-btn>
-
-                        <q-btn
-                            flat
-                            round  
-                            text-color="white"
-                            icon="bedtime"
-                            size="xl"
-                            class="icon">
-                            <q-tooltip content-class="bg-primary toolTipText">Dark Mode</q-tooltip>
-                        </q-btn>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -131,8 +117,8 @@ export default {
 
 .resumeSize {
    height:100vh;
-    width:1150px;
-    max-width:100vw;
+    width:60vw;
+    min-width:90vw;
     position: fixed;
 }
 
@@ -202,10 +188,44 @@ h1 {
 
     .resumeSize {
     height:100vh;
-    width:900px;
-    max-width:99vw;
+    width:450px;
+    min-width:9vw;
     position: fixed;
+  }
 }
+
+@media screen and (max-width: 440px) {
+    .padding {
+    padding-left:10px;
+    padding-right:10px;
+    }
+
+    h1 {
+        font-size:7vh;
+    }
+
+    .resumeSize {
+    height:100vh;
+    width:370px;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 330px) {
+    .padding {
+    padding-left:10px;
+    padding-right:10px;
+    }
+
+    h1 {
+        font-size:7vh;
+    }
+
+    .resumeSize {
+    height:100vh;
+    width:320px;
+    position: fixed;
+  }
 }
 
 @keyframes fadeinout {
