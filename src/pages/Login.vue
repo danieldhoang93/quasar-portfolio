@@ -1,22 +1,40 @@
 <template>
   <div class="col elementToFadeInAndOut text-center header">
     <div class="signIn text-center headerStuff shadows">
-      <h1>DDH</h1>
+      <router-link to="/" class="headerFont"><h1>DDH</h1></router-link>
+      
       <div class="inner">
-        <q-input v-model="text" label="Email" :dense="dense" dark/>
-        <q-input v-model="ph" label="Password" hint="" :dense="dense" dark/>
+        <q-input v-model="email" label="Email" type="email" hint="" dark/>
+        <q-input v-model="password" label="Password" :type="isPwd ? 'password' : 'text'" hint="" dark>
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              class="cursor-pointer"
+              @click="isPwd = !isPwd"
+            />
+          </template>
+      </q-input>
+      <q-input v-show="showConfirmPassword" v-model="confirmedPassword" label="Confirm Password" :type="isPwd ? 'password' : 'text'" hint="" dark>
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              class="cursor-pointer"
+              @click="isPwd = !isPwd"
+            />
+          </template>
+      </q-input>
       </div>
       
       <q-checkbox v-model="remember" label="Remember Me" style="float:left;" dark class="text-white rememberBox"/>
 
       <div class="q-py-md inner">
-        <q-btn label="Sign In" color="white text-purple" @click="signIn = true" class="signInBtn"/>
+        <q-btn color="white text-purple" @click="signIn()" class="signInBtn">{{signInBtnText}}</q-btn>
       </div>
       
 
       <div>
         <div style="float:left;">
-          <q-btn padding="sm" flat color="white" label="Register"/>
+          <q-btn padding="sm" flat color="white" @click="register()">{{registerButtonText}}</q-btn>
         </div>
 
         <q-btn padding="sm" flat color="white" label="Forgot Password" style="float:right;"/>
@@ -29,11 +47,37 @@
 export default {
   data () {
     return {
-      text: '',
-      ph: '',
+      email: '',
+      password: '',
+      confirmedPassword: '',
+      isPwd: true,
+      signInBtnText: "Sign In",
       dense: false,
-      signIn: false,
-      remember: false
+      showConfirmPassword: false,
+      remember: false,
+      registerButtonText: "Register"
+    }
+  },
+  methods: {
+    signIn () {
+      console.log(this.signInBtnText);
+    },
+    register () {
+      this.signInBtnText = "Register";
+      this.showConfirmPassword = true;
+      
+      if (this.registerButtonText == 'Register') {
+        this.signInBtnText = "Register";
+        this.registerButtonText = "Sign In";
+        this.showConfirmPassword = true;
+      }
+      else {
+        this.signInBtnText = "Register";
+        this.registerButtonText = "Register";
+        this.showConfirmPassword = false;
+      }
+      
+      console.log(this.signInBtnText);
     }
   }
 }

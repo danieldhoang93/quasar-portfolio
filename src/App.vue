@@ -42,7 +42,7 @@ export default {
 }
 
 .shadow2 {
-    text-shadow:8px 8px 5px rgba(0, 0, 0, 0.452);
+    text-shadow:8px 8px 5px rgba(0, 0, 0, 0.252);
 }
 
 .toolTipText {

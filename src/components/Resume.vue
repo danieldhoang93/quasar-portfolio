@@ -35,7 +35,7 @@
                                 T-SQL and Oracle queries, procedures, functions, etc.<br>
                                 ▪ Solid Grasp in Object Oriented Programming languages<br>
                                 ▪ A strong desire to expand knowledge in other areas of development, such
-                                as JavaScript, Full Stack Web Development, AI, Machine Learning, etc.<br>
+                                as JavaScript, Full Stack Development, AI, Machine Learning, etc.<br>
                             </p>
                         </div>
                         <div class="col-12 col-md-3"><img class="media fit" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy-downsized.gif" alt=""></div>
@@ -165,6 +165,11 @@
                         </h3>
                         <h5 class="italic">Public Trust</h5>
                     </div>
+
+                    <div class="col weatherApp text-center q-pt-xl">
+                        <Weather>
+                        </Weather>
+                    </div>
                 </div>
             </div>
 
@@ -182,11 +187,15 @@
 </template>
 
 <script>
-
+import Weather from 'components/Weather.vue' 
 export default {
-  data () {
+    components: {
+    Weather
+  },
+    data () {
     return {
-      dateTime: new Date()
+      dateTime: new Date(),
+      cityName: ''
     }
   }
 }
@@ -217,6 +226,13 @@ img.headerText {
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
     
+}
+
+.weatherApp {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
 }
 
 h1 {
