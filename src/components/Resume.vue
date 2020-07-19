@@ -229,7 +229,6 @@ img.headerText {
 }
 
 .weatherApp {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
     display:block;
