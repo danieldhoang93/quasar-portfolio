@@ -137,7 +137,6 @@ div.signIn {
   -webkit-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
   -moz-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
   filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.452));
-  
 }
 
 .q-input{

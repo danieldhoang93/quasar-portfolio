@@ -24,7 +24,7 @@
         
         <q-card-section class="resumePadding">
             <div class="row">
-                <div class="col-12 col-md-8 split">
+                <div class="col-12 col-md-9 split">
                     <h1 class="text-center text-weight-bolder">Who Is This Guy?!</h1>
                     <div class="row">
                         <div class="col-12 col-md-9">
@@ -126,7 +126,7 @@
                     backseat programming, and training them in SQL and RPA tools<br>
                     </p>
                 </div>
-                <div class="col-12 col-md-4 resumePadding">
+                <div class="col-12 col-md-3 resumePadding">
                     <h2 class="text-weight-bolder removeBottomPadding">Skills to Pay The Bills</h2>
                     <p>
                     ◾ PeopleCode ◾ T-SQL

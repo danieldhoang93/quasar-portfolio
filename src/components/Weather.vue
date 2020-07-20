@@ -3,14 +3,14 @@
         <div class="col text-h2 text-weight-light">
             Today's Forecast
         </div>
-        
+
         <template v-if="weatherData">
             <div class="col text-center">
                 <div class="text-h4 text-weight-light">
                     {{weatherData.name}}
                 </div>
 
-                <div class="text-h1 q-my-lg relative-position">
+                <div class="text-h2 q-my-lg relative-position">
                     <span class="text-weight-regular">{{Math.round(weatherData.main.temp_max)}}</span>
                     <span class="text-h4 relative-position degree">&deg;F</span> |
                     <span class="text-weight-thin">{{Math.round(weatherData.main.temp_min)}}</span>
@@ -51,9 +51,6 @@ export default {
   },
     mounted() {
         //get weather on resume load
-        //show loading icon
-        this.$q.loading.show()
-
         //get lat and lng
         navigator.geolocation.getCurrentPosition(
             position => {
@@ -79,15 +76,11 @@ export default {
     },
     methods: {
     getWeatherByCoords() {
-        //show loading icon
-        this.$q.loading.show()
-
         //call API for weather data and insert data into weatherData
         this.$axios(`${ this.apiUrl }?lat=${ this.lat }&lon=${ this.lng }&appid=${ this.apiKey }&units=imperial`)
         .then(response => {this.weatherData = response.data
         console.log(response);
-        //hide loading icon
-        this.$q.loading.hide()})
+        })
         .catch(e => {
         //catch errors
         console.log(response);
