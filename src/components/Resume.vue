@@ -123,7 +123,7 @@
                     ▪ Resolved problems issued through tickets, and ensured the customer
                     received satisfactory support and follow-up<br>
                     ▪ Mentored and lead junior developers by performing code reviews,
-                    backseat programming, and training them in SQL and RPA tools
+                    backseat programming, and training them in SQL and RPA tools<br>
                     ▪ Worked tasks and defects in an agile or kanban manner, which were managed through TFS<br>
                     </p>
                 </div>
