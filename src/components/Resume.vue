@@ -111,7 +111,7 @@
                     ▪ Developed a multithreaded system tray tool using Windows
                     Presentation Foundation forms, allowing users to report telephone or
                     internet connectivity issues<br>
-                    ▪ Collected data was inserted into the database using Windows
+                    ▪ Collected data was inserted into a SQLite database using Windows
                     Communication Foundation services, or momentarily stored locally
                     using JSON serialization if the internet was down<br>
                     ▪ Gathered statistics over time and used to push back against service
@@ -123,7 +123,8 @@
                     ▪ Resolved problems issued through tickets, and ensured the customer
                     received satisfactory support and follow-up<br>
                     ▪ Mentored and lead junior developers by performing code reviews,
-                    backseat programming, and training them in SQL and RPA tools<br>
+                    backseat programming, and training them in SQL and RPA tools
+                    ▪ Worked tasks and defects in an agile or kanban manner, which were managed through TFS<br>
                     </p>
                 </div>
                 <div class="col-12 col-md-3 resumePadding">
