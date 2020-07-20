@@ -108,7 +108,7 @@
                     .xml files<br>
                     </p>
                     <p>C#, .NET<br>
-                    Helped develop and maintain the web app built with JavaScript,
+                    ▪ Helped develop and maintain the web app built with JavaScript,
                     bootstrap, and .NET<br>
                     ▪ Used GETs or POST/PUTs to push or pull data using REST APIs<br>
                     ▪ Developed a multithreaded system tray tool using Windows
