@@ -107,7 +107,10 @@
                     file types and structures ranging from delimited .txt files to hierarchical
                     .xml files<br>
                     </p>
-                    <p>C#<br>
+                    <p>C#, .NET<br>
+                    Helped develop and maintain the web app built with JavaScript,
+                    bootstrap, and .NET<br>
+                    ▪ Used GETs or POST/PUTs to push or pull data using REST APIs<br>
                     ▪ Developed a multithreaded system tray tool using Windows
                     Presentation Foundation forms, allowing users to report telephone or
                     internet connectivity issues<br>
