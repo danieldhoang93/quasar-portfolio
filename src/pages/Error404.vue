@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .background404 {
   background: linear-gradient(311deg, #00ff95, #6365ff, #ff7300);
     background-size: 200% 200%;
