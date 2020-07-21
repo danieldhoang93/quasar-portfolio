@@ -65,22 +65,17 @@ export default {
   computed: {
     //get user details state from vuex store
     ...mapState('loginRegister', ['userDetails']),
-    loginLabel() {
-     
-    }
+
   },
   mounted() {
-    if (this.userDetails.firstName) {
-      console.log("logged in")
+     if (!this.userDetails.userid) {
       this.essentialLinks[1].title = "Log Out";
       this.essentialLinks[1].icon = "logout";
       this.essentialLinks[1].link = "/404";
     }
     else {
-      console.log("logged out")
       this.essentialLinks[1].title = "Log In";
     }
- 
   },
   data () {
     return {
