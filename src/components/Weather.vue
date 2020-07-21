@@ -1,5 +1,7 @@
 <template>
-    <div class="flex column q-pt-lg">
+<a href="http://ddh-weather.netlify.app" class="weatherLink" target="_blank">
+<q-tooltip content-class="toolTipText">Click here to see the weather app!</q-tooltip>
+<div class="flex column q-pt-lg">
         <div class="col text-h2 text-weight-light">
             Today's Forecast
         </div>
@@ -33,6 +35,8 @@
         </div>
         </template>
     </div>
+</a>
+    
 </template>
 
 <script>
@@ -100,5 +104,10 @@ export default {
 
 .shadow3 {
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.552));
+}
+
+.weatherLink {
+    text-decoration: none;
+    color: #2f2f2f;
 }
 </style>

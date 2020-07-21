@@ -38,7 +38,7 @@
                     <img src="~/assets/head.png" class="circle shadow-24">
                     <div class="shadow2 padding">
                         <p class="shadow2"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
-                        software development, translating business requirements into high quality solutions by leveraging my creativity and skillset to create unquestionable value.</p>
+                        software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
 
                         <p>
                         I have a solid grasp in object oriented programming, full stack development technologies, robotic process automation, and a deep understanding of SQL and relational data models.

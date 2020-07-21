@@ -1,0 +1,14 @@
+{
+    "users": {
+        "userid1": {
+            "first_name": "Daniel",
+            "last_name": "Hoang",
+            "email": "danieldhoang93@gmail.com"
+        },
+        "userid2": {
+            "first_name": "Pete",
+            "last_name": "Wong",
+            "email": "a@a.com"
+        }
+    }
+}

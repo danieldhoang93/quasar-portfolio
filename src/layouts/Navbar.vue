@@ -6,7 +6,7 @@
         <q-toolbar-title class="headerFont text-weight-thin q-ml-sm">
           <router-link to="/" class="headerFont">DDH</router-link>
         </q-toolbar-title>
-
+        <div v-if="userDetails.userId" class="q-pr-sm">Hey, {{ this.userDetails.firstName }}</div>
         <q-btn
         dense 
         flat 
@@ -54,6 +54,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
+import { mapState } from 'vuex'
 
 export default {
   name: 'MainLayout',
@@ -61,7 +62,26 @@ export default {
   components: {
     EssentialLink
   },
-
+  computed: {
+    //get user details state from vuex store
+    ...mapState('loginRegister', ['userDetails']),
+    loginLabel() {
+     
+    }
+  },
+  mounted() {
+    if (this.userDetails.firstName) {
+      console.log("logged in")
+      this.essentialLinks[1].title = "Log Out";
+      this.essentialLinks[1].icon = "logout";
+      this.essentialLinks[1].link = "/404";
+    }
+    else {
+      console.log("logged out")
+      this.essentialLinks[1].title = "Log In";
+    }
+ 
+  },
   data () {
     return {
       right: false,

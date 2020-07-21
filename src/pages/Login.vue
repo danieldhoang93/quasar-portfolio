@@ -4,17 +4,10 @@
       <router-link to="/" class="headerFont"><h1>DDH</h1></router-link>
       
       <div class="inner">
-        <q-input v-model="email" label="Email" type="email" hint="" dark/>
-        <q-input v-model="password" label="Password" :type="isPwd ? 'password' : 'text'" hint="" dark>
-          <template v-slot:append>
-            <q-icon
-              :name="isPwd ? 'visibility_off' : 'visibility'"
-              class="cursor-pointer"
-              @click="isPwd = !isPwd"
-            />
-          </template>
-      </q-input>
-      <q-input v-show="showConfirmPassword" v-model="confirmedPassword" label="Confirm Password" :type="isPwd ? 'password' : 'text'" hint="" dark>
+        <q-input v-show="isRegister" v-model="loginData.firstName" label="First Name" hint="" dark/>
+        <q-input v-show="isRegister" v-model="loginData.lastName" label="Last Name" hint="" dark/>
+        <q-input v-model="loginData.email" label="Email" type="email" hint="" dark/>
+        <q-input v-model="loginData.password" label="Password" :type="isPwd ? 'password' : 'text'" hint="" dark>
           <template v-slot:append>
             <q-icon
               :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -44,23 +37,36 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   data () {
     return {
-      email: '',
-      password: '',
-      confirmedPassword: '',
+      loginData: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+      },
       isPwd: true,
       signInBtnText: "Sign In",
       dense: false,
-      showConfirmPassword: false,
+      isRegister: false,
       remember: false,
       registerButtonText: "Register"
     }
   },
   methods: {
+    //get actions from store file 'loginRegister'
+        ...mapActions('loginRegister', ['registerUser', 'loginUser']),
     signIn () {
-      console.log(this.signInBtnText);
+      if (!this.isRegister) {
+        //sign in
+        this.loginUser(this.loginData);
+      }
+      else {
+        //register
+        this.registerUser(this.loginData);
+      }
     },
     register () {
       this.signInBtnText = "Register";
@@ -69,12 +75,12 @@ export default {
       if (this.registerButtonText == 'Register') {
         this.signInBtnText = "Register";
         this.registerButtonText = "Sign In";
-        this.showConfirmPassword = true;
+        this.isRegister = true;
       }
       else {
-        this.signInBtnText = "Register";
+        this.signInBtnText = "Sign In";
         this.registerButtonText = "Register";
-        this.showConfirmPassword = false;
+        this.isRegister = false;
       }
       
       console.log(this.signInBtnText);
