@@ -71,7 +71,7 @@ export default {
      if (!this.userDetails.userid) {
       this.essentialLinks[1].title = "Log Out";
       this.essentialLinks[1].icon = "logout";
-      this.essentialLinks[1].link = "/404";
+      this.essentialLinks[1].link = "/";
     }
     else {
       this.essentialLinks[1].title = "Log In";

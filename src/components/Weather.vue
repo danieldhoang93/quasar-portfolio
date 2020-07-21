@@ -1,6 +1,5 @@
 <template>
 <a href="http://ddh-weather.netlify.app" class="weatherLink" target="_blank">
-<q-tooltip content-class="toolTipText">Click here to see the weather app!</q-tooltip>
 <div class="flex column q-pt-lg">
         <div class="col text-h2 text-weight-light">
             Today's Forecast
@@ -34,6 +33,7 @@
             <p class="text-subtitle1">Enable location to see your local weather!</p>
         </div>
         </template>
+        <p class="text-caption">Click here to view the app!</p>
     </div>
 </a>
     
