@@ -8,7 +8,8 @@
                         <a   flat
                             round
                             text-color="white"
-                            href="https://github.com/danieldhoang93/danieldhoang93.github.io" 
+                            href="https://github.com/danieldhoang93" 
+                            target="_blank"
                             class="button q-pa-lg"> 
                             <img src="~/assets/github.png" class="shrinkSVGicon">
                             <q-tooltip content-class="bg-primary toolTipText">GitHub</q-tooltip>
@@ -19,6 +20,7 @@
                             text-color="white"
                             size="xl"
                             href="https://www.linkedin.com/in/ddhoang/" 
+                            target="_blank"
                             class="button q-pa-lg"> 
                             <img src="~/assets/linkedin.png" class="shrinkSVGicon">
                             <q-tooltip content-class="bg-primary toolTipText">Linkedin</q-tooltip>
