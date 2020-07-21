@@ -6,7 +6,7 @@
         <q-toolbar-title class="headerFont text-weight-thin q-ml-sm">
           <router-link to="/" class="headerFont">DDH</router-link>
         </q-toolbar-title>
-        <div v-if="userDetails.userId" class="q-pr-sm">Hey, {{ this.userDetails.firstName }}</div>
+        <div v-if="userDetails.userId" class="q-pr-sm headerFont">Hey, {{ this.userDetails.firstName }}</div>
         <q-btn
         dense 
         flat 
@@ -134,6 +134,7 @@ export default {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 100;
   text-decoration: none;
   color:white;
 }
