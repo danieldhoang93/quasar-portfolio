@@ -167,7 +167,7 @@
                         <h3 class="text-weight-bolder removeBottomPadding">
                             Clearance
                         </h3>
-                        <h5 class="italic">Public Trust</h5>
+                        <h5 class="italic">Secret</h5>
                     </div>
 
                     <div class="col weatherApp text-center q-pt-xl">
