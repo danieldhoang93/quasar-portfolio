@@ -23,7 +23,6 @@
       <div class="q-py-md inner">
         <q-btn color="white text-purple" @click="signIn()" class="signInBtn">{{signInBtnText}}</q-btn>
       </div>
-      
 
       <div>
         <div style="float:left;">

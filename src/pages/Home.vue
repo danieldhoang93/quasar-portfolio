@@ -71,7 +71,7 @@
                         navigation
                         infinite
                         swipeable
-                        control-color="black"
+                        control-color="white"
                         >
                             <q-carousel-slide :name="1" img-src="~/assets/bathroom_app.png">
                                 <a href="http://ddh-plop.netlify.app" target="_blank">
@@ -235,7 +235,7 @@ h1 {
 
 .custom-caption {
     text-align: center;
-    padding: 12px;
+    padding: 75px;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     height:100%;
