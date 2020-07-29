@@ -82,7 +82,7 @@
                                 </a>
                             </q-carousel-slide>
                             
-                            <q-carousel-slide :name="2" img-src="~/assets/weather_app.png">
+                            <q-carousel-slide :name="2" img-src="~/assets/swiper_app.png">
                                 <a href="http://please-love-me.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Swiper</div>
