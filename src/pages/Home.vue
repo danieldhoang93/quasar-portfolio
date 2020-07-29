@@ -61,6 +61,54 @@
             <div class="col">
                 <div class="contactSection">
                     <header>
+                        <h1 class="shadow">The Fun Stuff</h1>
+                    </header>
+                    <div class="projects">
+                        <q-carousel
+                        animated
+                        v-model="slide"
+                        arrows
+                        navigation
+                        infinite
+                        swipeable
+                        control-color="black"
+                        >
+                            <q-carousel-slide :name="1" img-src="~/assets/bathroom_app.png">
+                                <a href="http://ddh-plop.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">Plop</div>
+                                        <div class="text-subtitle1">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business.</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
+                            
+                            <q-carousel-slide :name="2" img-src="~/assets/swiper_app.png">
+                                <a href="http://please-love-me.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">Swiper</div>
+                                        <div class="text-subtitle1">An app that alows you swipe through fake people using a REST API I deployed. If no one likes you back, don't worry, that's a feature.</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="3" img-src="~/assets/weather_app.png">
+                                <a href="http://ddh-weather.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">Weather</div>
+                                        <div class="text-subtitle1">A simple weather app that shows you the current weather of anywhere you search.</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
+                        </q-carousel>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="col">
+                <div class="contactSection">
+                    <header>
                         <h1 class="shadow">Contact</h1>
                     </header>
                     <p class="shadow2">danieldhoang93@gmail.com</p>
@@ -80,9 +128,18 @@ export default {
   },
   data () {
     return {
-      resume: false
+      resume: false,
+      slide: 1
+    }
+  },
+  methods: {
+      increment() {
+          this.total++;
+          this.show = !this.show;
+          this.showNew = !this.showNew;
     }
   }
+    
 }
 </script>
 
@@ -169,6 +226,21 @@ h1 {
     padding-right:160px;
 }
 
+.projects {
+    width:41vw;
+    min-width:350px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.custom-caption {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    height:100%;
+    padding-top:150px;
+}
 
 @media screen and (min-width: 900px) {
     .padding {
@@ -233,9 +305,22 @@ h1 {
   }
 }
 
-@keyframes fadeinout {
-    0% { opacity: 0; }
-    30% { opacity: 1; }
-    90% { opacity: 1; }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
+
 </style>
