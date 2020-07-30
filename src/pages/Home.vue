@@ -99,6 +99,15 @@
                                     </div>
                                 </a>
                             </q-carousel-slide>
+
+                            <q-carousel-slide :name="4" img-src="~/assets/snooze_app.png">
+                                <a href="http://ddh-snooze.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">Snooze</div>
+                                        <div class="text-subtitle1">Snooze for charity. People will finally thank you for sleeping in!</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
                         </q-carousel>
                     </div>
                 </div>
