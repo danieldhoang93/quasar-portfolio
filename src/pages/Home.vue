@@ -73,7 +73,25 @@
                         swipeable
                         control-color="white"
                         >
-                            <q-carousel-slide :name="1" img-src="~/assets/bathroom_app.png">
+                            <q-carousel-slide :name="1" img-src="~/assets/instasham.jpg">
+                                <a href="http://instasham.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">Instasham</div>
+                                        <div class="text-subtitle1">Instagram clone that allows you to use the camera or upload photos to the mainpage<span class="text-italic">your</span> business.</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
+                            
+                            <q-carousel-slide :name="2" img-src="~/assets/worldtutor.jpg">
+                                <a href="http://worldtutor.netlify.app" target="_blank">
+                                    <div class="absolute-bottom custom-caption shadow">
+                                        <div class="text-h3">World Tutor</div>
+                                        <div class="text-subtitle1">Find tutors from other countries to teach you their language, and about their countries and culture</div>
+                                    </div>
+                                </a>
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="3" img-src="~/assets/bathroom_app.jpg">
                                 <a href="http://ddh-plop.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Plop</div>
@@ -82,7 +100,7 @@
                                 </a>
                             </q-carousel-slide>
                             
-                            <q-carousel-slide :name="2" img-src="~/assets/swipe_app.png">
+                            <q-carousel-slide :name="4" img-src="~/assets/swipe_app.jpg">
                                 <a href="http://please-love-me.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Swiper</div>
@@ -91,7 +109,7 @@
                                 </a>
                             </q-carousel-slide>
 
-                            <q-carousel-slide :name="3" img-src="~/assets/weather_app.png">
+                            <q-carousel-slide :name="5" img-src="~/assets/weather_app.jpg">
                                 <a href="http://ddh-weather.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Weather</div>
@@ -100,7 +118,7 @@
                                 </a>
                             </q-carousel-slide>
 
-                            <q-carousel-slide :name="4" img-src="~/assets/snooze_app.png">
+                            <q-carousel-slide :name="6" img-src="~/assets/snooze_app.jpg">
                                 <a href="http://ddh-snooze.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Snooze</div>
