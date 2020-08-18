@@ -74,10 +74,10 @@
                         control-color="white"
                         >
                             <q-carousel-slide :name="1" img-src="~/assets/instasham.jpg">
-                                <a href="http://instasham.netlify.app" target="_blank">
+                                <a href="" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Instasham</div>
-                                        <div class="text-subtitle1">Instagram clone that allows you to use the camera or upload photos to the mainpage<span class="text-italic">your</span> business.</div>
+                                        <div class="text-subtitle1">Instagram clone that allows you to take photos or upload photos to the mainpage<span class="text-italic">your</span> business.</div>
                                     </div>
                                 </a>
                             </q-carousel-slide>
