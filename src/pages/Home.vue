@@ -77,7 +77,7 @@
                                 <a href="http://instasham.netlify.app" target="_blank">
                                     <div class="absolute-bottom custom-caption shadow">
                                         <div class="text-h3">Instasham</div>
-                                        <div class="text-subtitle1">Instagram clone that allows you to take photos or upload photos to the mainpage<span class="text-italic">your</span> business.</div>
+                                        <div class="text-subtitle1">Instagram clone that allows you to take or upload photos to the mainpage</div>
                                     </div>
                                 </a>
                             </q-carousel-slide>
