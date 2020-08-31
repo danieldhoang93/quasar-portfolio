@@ -36,42 +36,47 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 aboutSectionColored padding" id="aboutTop">
-                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">About</div>
-                    <div class="shadow2">
-                        <p>
-                            Some information about me, my resume, and technologies used.
-                        </p>
+                    <div v-animate-onscroll.repeat="'fadeInUp'">
+                        <div class="shadow text-h1 text-white q-py-xl">About</div>
+                            <div class="shadow2">
+                                <p>
+                                    Some information about me, my resume, and technologies used.
+                                </p>
+                            </div>
                     </div>
-
+                    
                 </div>
                 <div class="col-12 col-md-6" id="aboutBottom">
                     <div class="aboutSection padding">
-                        <div class="coloredHeaderSection">
-                            <div class="shadow aboutHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Me</div>
-                        </div>
-                        
-                        <img src="~/assets/head.png" class="circle shadow-24">
-                        <div class="smallWidth">
-                            <p class="text-black"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
-                            software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
+                            <div class="coloredHeaderSection">
+                                <div class="shadow aboutHeader text-h1 q-py-xl">Me</div>
+                            </div>
+                            
+                            <img src="~/assets/head.png" class="circle shadow-24">
+                            <div class="smallWidth">
+                                <p class="text-black"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
+                                software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
 
-                            <p class="text-black">
-                            I have a solid grasp in object oriented programming, full stack development technologies, robotic process automation, and a deep understanding of SQL and relational data models.
-                            </p><br><br>
+                                <p class="text-black">
+                                I have a solid grasp in object oriented programming, full stack development technologies, robotic process automation, and a deep understanding of SQL and relational data models.
+                                </p><br><br>
+                            </div>
+                            <div class="q-pb-xl">
+                                <q-btn outline label="View Resume" color="purple" @click="resume = true" class="shadow-20"/>
+                                <q-dialog v-model="resume">  
+                                    <q-card class="resumeSize">
+                                        <Resume></Resume>
+                                    </q-card>
+                                </q-dialog>
+                            </div>
                         </div>
 
-                        <div class="q-pb-xl">
-                            <q-btn outline label="View Resume" color="purple" @click="resume = true" class="shadow-20"/>
-                            <q-dialog v-model="resume">  
-                                <q-card class="resumeSize">
-                                    <Resume></Resume>
-                                </q-card>
-                            </q-dialog>
-                        </div>
-                                                
-                        <div class="shadow aboutHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Tech Stack</div>
-                        <div class="q-pb-xl">
-                            <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
+                            <div class="shadow aboutHeader text-h1 q-py-xl">Tech Stack</div>
+                            <div class="q-pb-xl">
+                                <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,16 +86,19 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 projectSectionColored padding" id="projectsTop">
-                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Projects</div>
-                    <div class="shadow2">
-                        <p>My portfolio of projects implementing various technologies.</p>
+                    <div v-animate-onscroll.repeat="'fadeInUp'">
+                        <div class="shadow text-h1 text-white q-py-xl">Projects</div>
+                        <div class="shadow2">
+                            <p>My portfolio of projects implementing various technologies.</p>
+                        </div> 
                     </div>
+                    
                 </div>
                 <div class="col-12 col-md-6 q-pb-xl">
                     <div class="aboutSection padding">
-                        <div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Instasham</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl">Instasham</div>
                             </div>
                             <a href="http://instasham.netlify.app" target="_blank">
                                 <img src="~/assets/instasham.jpg" class="smallWidth fullWidth">
@@ -99,9 +107,9 @@
                         </div>
                         
                             
-                        <div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">World Tutor</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl">World Tutor</div>
                             </div>
                             <a href="http://worldtutor.netlify.app" target="_blank">
                                 <img src="~/assets/worldtutor.jpg" class="smallWidth fullWidth">
@@ -109,9 +117,9 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.</p>
                         </div>
 
-                        <div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Plop</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl">Plop</div>
                             </div>
                             <a href="http://ddh-plop.netlify.app" target="_blank">
                                 <img src="~/assets/bathroom_app.jpg" class="smallWidth fullWidth">
@@ -119,9 +127,9 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.</p>
                         </div>
 
-                        <div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">People Swiper</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl">People Swiper</div>
                             </div>
                             <a href="http://please-love-me.netlify.app" target="_blank">
                                 <img src="~/assets/swipe_app.jpg" class="smallWidth fullWidth">
@@ -129,9 +137,9 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">A dating app where you can swipe through a list of people pulled in from a REST API.</p>
                         </div>
 
-                        <div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Weather</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl">Weather</div>
                             </div>
                             <a href="http://ddh-weather.netlify.app" target="_blank">
                                 <img src="~/assets/weather_app.jpg" class="smallWidth fullWidth">
@@ -147,25 +155,33 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 contactSectionColored padding" id="contactTop">
-                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Contact</div>
-                    <div class="shadow2">
-                        <p>Need to get in touch with me?</p>
+                    <div v-animate-onscroll.repeat="'fadeInUp'">
+                        <div class="shadow text-h1 text-white q-py-xl">Contact</div>
+                        <div class="shadow2">
+                            <p>Need to get in touch with me?</p>
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-md-6 padding">
                     <div class="aboutSection">
-                        <div class="coloredHeaderSection">
-                            <div class="shadow contactHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Email</div>
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
+                            <div class="coloredHeaderSection">
+                                <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
+                            </div>
+                            <p class="text-black">
+                                danieldhoang93@gmail.com
+                            </p>
                         </div>
-                        <p class="text-black">
-                            danieldhoang93@gmail.com
-                        </p>
-                        <div class="coloredHeaderSection">
-                            <div class="shadow contactHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Phone</div>
+                        
+                        <div v-animate-onscroll.repeat="'fadeInUp'">
+                            <div class="coloredHeaderSection">
+                                <div class="shadow contactHeader text-h1 q-py-xl">Phone</div>
+                            </div>
+                            <p class="text-black">
+                                703-314-6010
+                            </p>
                         </div>
-                        <p class="text-black">
-                            703-314-6010
-                        </p>
                     </div>
                 </div>
             </div>

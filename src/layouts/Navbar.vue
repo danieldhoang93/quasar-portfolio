@@ -43,6 +43,9 @@
       <router-view />
     </q-page-container>
 
+    <div class="footer">
+      <p class="headerText text-white" style="font-family: 'Montserrat', sans-serif;">© Untitled. All rights reserved.</p>
+    </div>  
   </q-layout>
 </template>
 
@@ -159,7 +162,15 @@ export default {
 }
 
 .coloredIcon {
-  color:#6817ff;
+  color:#000000;
 }
 
+.footer {
+    background:#131313;
+    height:100px;
+    width: 100%;
+    position:relative;
+    left: 0;
+    bottom: 0;
+}
 </style>
