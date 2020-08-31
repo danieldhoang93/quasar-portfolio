@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpr fFf">
     <q-header 
-    reveal >
+     >
       <q-toolbar>
         <q-toolbar-title class="headerFont text-weight-thin q-ml-sm">
           <router-link to="/" class="headerFont">DDH</router-link>
@@ -13,7 +13,8 @@
         round 
         icon="menu" 
         aria-label="Menu"
-        @click="right = !right"/>
+        @click="right = !right"
+        id="menuBtn"/>
       </q-toolbar>
     </q-header>
 
@@ -22,7 +23,9 @@
     side="right" 
     :breakpoint="767"
     :width="180"
-    overlay>
+    overlay
+    id="drawer"
+    >
 
     <q-list dark>
         <div class="navPadding">
@@ -76,10 +79,30 @@ export default {
     else {
       this.essentialLinks[1].title = "Log In";
     }
+    window.addEventListener('scroll', this.updateScroll);
+  },
+  methods: {
+    updateScroll() {
+        this.scrollPosition = window.scrollY;
+        var aboutSectionTop = document.getElementById("aboutTop").offsetTop;
+        var projectSectionTop = document.getElementById("projectsTop").offsetTop;
+        var contactSectionTop = document.getElementById("contactTop").offsetTop;
+
+        if (this.scrollPosition >= aboutSectionTop - 20)
+        {
+          document.getElementById("menuBtn").classList.add("coloredIcon");
+          document.getElementById("drawer").classList.add("coloredDrawer");
+        } 
+        else {
+          document.getElementById("menuBtn").classList.remove("coloredIcon");
+          ocument.getElementById("drawer").classList.remove("coloredDrawer");
+        }
+    }
   },
   data () {
     return {
       right: false,
+      scrollPosition: 0,
       essentialLinks: [
         {
           title: 'Home',
@@ -98,9 +121,10 @@ export default {
 </script>
 
 <style lang="scss">
-
 .q-drawer {
-  background: rgba(0, 0, 0, 0.00);
+  background: linear-gradient(311deg, #fb9d00, #8402fd, #0aceff);
+  background-size: 120% 120%;
+
   .q-router-link--exact-active{
   color:#000202fb!important;
   font-weight:normal;
@@ -138,4 +162,9 @@ export default {
     margin-top:7px;
     margin-right:12px;
 }
+
+.coloredIcon {
+  color:#6817ff;
+}
+
 </style>

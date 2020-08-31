@@ -17,14 +17,36 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
 #q-app {
-    background: linear-gradient(311deg, #fb9d00, #9c32ff, #0affc0);
-    background-size: 200% 200%;
+    
+}
 
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+.fullWidth {
+    width:100%;
+}
+
+.delayAnimation {
+    animation-delay:2s;
+}
+
+.fadeInUp {
+  animation: fadeinup 1s linear forwards;
+}	
+
+@keyframes fadeinup {
+  0% { 
+    opacity: 0; 
+    transform: translateY(40px);
+  }
+  30% { 
+    opacity: 0.3; 
+    transform: translateY(30px);
+  }
+  90% { 
+    opacity: 1; 
+    transform: translateY(5px);
+  };
 }
 
 @-webkit-keyframes AnimationName {
