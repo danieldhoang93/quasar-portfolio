@@ -51,7 +51,7 @@
                         </div>
                         
                         <img src="~/assets/head.png" class="circle shadow-24">
-                        <div>
+                        <div class="smallWidth">
                             <p class="text-black"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
                             software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
 
@@ -71,7 +71,7 @@
                                                 
                         <div class="shadow aboutHeader text-h1 q-py-xl">Tech Stack</div>
                         <div class="q-pb-xl">
-                            <img src="~/assets/techstack.jpg" class="fullWidth"/>
+                            <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
                         </div>
                     </div>
                 </div>
@@ -93,9 +93,9 @@
                                 <div class="shadow projectHeader text-h1 q-py-xl">Instasham</div>
                             </div>
                             <a href="http://instasham.netlify.app" target="_blank">
-                                <img src="~/assets/instasham.jpg" class="projectImgWidth fullWidth">
+                                <img src="~/assets/instasham.jpg" class="smallWidth fullWidth">
                             </a>
-                            <p class="text-subtitle1 text-black q-pt-md">Instagram clone that allows you to capture or upload photos to the mainpage. Images are inserted and pulled from a Firestore database.</p>
+                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Instagram clone that allows you to capture or upload photos to the mainpage. Images are inserted and pulled from a Firestore database.</p>
                         </div>
                         
                             
@@ -104,9 +104,9 @@
                                 <div class="shadow projectHeader text-h1 q-py-xl">World Tutor</div>
                             </div>
                             <a href="http://worldtutor.netlify.app" target="_blank">
-                                <img src="~/assets/worldtutor.jpg" class="projectImgWidth fullWidth">
+                                <img src="~/assets/worldtutor.jpg" class="smallWidth fullWidth">
                             </a>
-                            <p class="text-subtitle1 text-black q-pt-md">Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.</p>
+                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.</p>
                         </div>
 
                         <div>
@@ -114,9 +114,9 @@
                                 <div class="shadow projectHeader text-h1 q-py-xl">Plop</div>
                             </div>
                             <a href="http://ddh-plop.netlify.app" target="_blank">
-                                <img src="~/assets/bathroom_app.jpg" class="projectImgWidth fullWidth">
+                                <img src="~/assets/bathroom_app.jpg" class="smallWidth fullWidth">
                             </a>
-                            <p class="text-subtitle1 text-black q-pt-md">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.</p>
+                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.</p>
                         </div>
 
                         <div>
@@ -124,9 +124,9 @@
                                 <div class="shadow projectHeader text-h1 q-py-xl">People Swiper</div>
                             </div>
                             <a href="http://please-love-me.netlify.app" target="_blank">
-                                <img src="~/assets/swipe_app.jpg" class="projectImgWidth fullWidth">
+                                <img src="~/assets/swipe_app.jpg" class="smallWidth fullWidth">
                             </a>
-                            <p class="text-subtitle1 text-black q-pt-md">A dating app where you can swipe through a list of people pulled in from a REST API.</p>
+                            <p class="text-subtitle1 text-black q-pt-md smallWidth">A dating app where you can swipe through a list of people pulled in from a REST API.</p>
                         </div>
 
                         <div>
@@ -134,9 +134,9 @@
                                 <div class="shadow projectHeader text-h1 q-py-xl">Weather</div>
                             </div>
                             <a href="http://ddh-weather.netlify.app" target="_blank">
-                                <img src="~/assets/weather_app.jpg" class="projectImgWidth fullWidth">
+                                <img src="~/assets/weather_app.jpg" class="smallWidth fullWidth">
                             </a>
-                            <p class="text-subtitle1 text-black q-pt-md">A simple weather app that shows you the current weather of anywhere you search. Coordinates are passed into an API to retrieve weather data.</p>
+                            <p class="text-subtitle1 text-black q-pt-md smallWidth">A simple weather app that shows you the current weather of anywhere you search. Coordinates are passed into an API to retrieve weather data.</p>
                         </div>
 
                     </div>
@@ -232,6 +232,10 @@ export default {
 
 .projectImgWidth {
     max-width:500px;
+}
+
+.smallWidth {
+    max-width:600px;
 }
 
 .button {
