@@ -18,10 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-#q-app {
-    
-}
-
 .fullWidth {
     width:100%;
 }

@@ -3,7 +3,7 @@
     <q-header 
      >
       <q-toolbar>
-        <q-toolbar-title class="headerFont text-weight-thin q-ml-sm">
+        <q-toolbar-title class="q-ml-sm">
           <router-link to="/" class="headerFont">DDH</router-link>
         </q-toolbar-title>
         <div v-if="userDetails.userId" class="q-pr-sm headerFont">Hey, {{ this.userDetails.firstName }}</div>
@@ -14,7 +14,8 @@
         icon="menu" 
         aria-label="Menu"
         @click="right = !right"
-        id="menuBtn"/>
+        id="menuBtn"
+        style="z-index:9999;"/>
       </q-toolbar>
     </q-header>
 
@@ -22,23 +23,13 @@
     v-model="right" 
     side="right" 
     :breakpoint="767"
-    :width="180"
+    :width="200"
+    behavior="desktop"
     overlay
     id="drawer"
     >
 
-    <q-list dark>
-        <div class="navPadding">
-            <q-btn
-            class="absolute-top-right iconPadding smallWindow" 
-            dense 
-            flat 
-            round 
-            icon="menu" 
-            aria-label="Menu"
-            @click="right = !right" />
-        </div>
-        
+    <q-list dark class="q-my-xl">
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -91,11 +82,9 @@ export default {
         if (this.scrollPosition >= aboutSectionTop - 20)
         {
           document.getElementById("menuBtn").classList.add("coloredIcon");
-          document.getElementById("drawer").classList.add("coloredDrawer");
         } 
         else {
           document.getElementById("menuBtn").classList.remove("coloredIcon");
-          ocument.getElementById("drawer").classList.remove("coloredDrawer");
         }
     }
   },
@@ -124,6 +113,12 @@ export default {
 .q-drawer {
   background: linear-gradient(311deg, #fb9d00, #8402fd, #0aceff);
   background-size: 120% 120%;
+  margin-top:-50px;
+  z-index:1;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+  background-size: 300% 300%;
 
   .q-router-link--exact-active{
   color:#000202fb!important;
@@ -150,7 +145,7 @@ export default {
 }
 
 .headerFont, .navFont{
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 100;

@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="main-message header">
                     <div class="headerStuff">
-                        <h1 class="shadow fadeInUp">Inspire Creativity</h1>
+                        <h1 class="shadow" v-animate-onscroll.repeat="'fadeInUp'">Inspire Creativity</h1>
                         <div class="fadeInUp">
                             <a   flat
                             round
@@ -36,7 +36,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 aboutSectionColored padding" id="aboutTop">
-                    <div class="shadow text-h1 text-white q-py-xl">About</div>
+                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">About</div>
                     <div class="shadow2">
                         <p>
                             Some information about me, my resume, and technologies used.
@@ -47,7 +47,7 @@
                 <div class="col-12 col-md-6" id="aboutBottom">
                     <div class="aboutSection padding">
                         <div class="coloredHeaderSection">
-                            <div class="shadow aboutHeader text-h1 q-py-xl">Me</div>
+                            <div class="shadow aboutHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Me</div>
                         </div>
                         
                         <img src="~/assets/head.png" class="circle shadow-24">
@@ -69,7 +69,7 @@
                             </q-dialog>
                         </div>
                                                 
-                        <div class="shadow aboutHeader text-h1 q-py-xl">Tech Stack</div>
+                        <div class="shadow aboutHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Tech Stack</div>
                         <div class="q-pb-xl">
                             <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
                         </div>
@@ -81,7 +81,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 projectSectionColored padding" id="projectsTop">
-                    <div class="shadow text-h1 text-white q-py-xl">Projects</div>
+                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Projects</div>
                     <div class="shadow2">
                         <p>My portfolio of projects implementing various technologies.</p>
                     </div>
@@ -90,7 +90,7 @@
                     <div class="aboutSection padding">
                         <div>
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Instasham</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Instasham</div>
                             </div>
                             <a href="http://instasham.netlify.app" target="_blank">
                                 <img src="~/assets/instasham.jpg" class="smallWidth fullWidth">
@@ -101,7 +101,7 @@
                             
                         <div>
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">World Tutor</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">World Tutor</div>
                             </div>
                             <a href="http://worldtutor.netlify.app" target="_blank">
                                 <img src="~/assets/worldtutor.jpg" class="smallWidth fullWidth">
@@ -111,7 +111,7 @@
 
                         <div>
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Plop</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Plop</div>
                             </div>
                             <a href="http://ddh-plop.netlify.app" target="_blank">
                                 <img src="~/assets/bathroom_app.jpg" class="smallWidth fullWidth">
@@ -121,7 +121,7 @@
 
                         <div>
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">People Swiper</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">People Swiper</div>
                             </div>
                             <a href="http://please-love-me.netlify.app" target="_blank">
                                 <img src="~/assets/swipe_app.jpg" class="smallWidth fullWidth">
@@ -131,7 +131,7 @@
 
                         <div>
                             <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Weather</div>
+                                <div class="shadow projectHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Weather</div>
                             </div>
                             <a href="http://ddh-weather.netlify.app" target="_blank">
                                 <img src="~/assets/weather_app.jpg" class="smallWidth fullWidth">
@@ -147,7 +147,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 contactSectionColored padding" id="contactTop">
-                    <div class="shadow text-h1 text-white q-py-xl">Contact</div>
+                    <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Contact</div>
                     <div class="shadow2">
                         <p>Need to get in touch with me?</p>
                     </div>
@@ -155,13 +155,13 @@
                 <div class="col-12 col-md-6 padding">
                     <div class="aboutSection">
                         <div class="coloredHeaderSection">
-                            <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
+                            <div class="shadow contactHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Email</div>
                         </div>
                         <p class="text-black">
                             danieldhoang93@gmail.com
                         </p>
                         <div class="coloredHeaderSection">
-                            <div class="shadow contactHeader text-h1 q-py-xl">Phone</div>
+                            <div class="shadow contactHeader text-h1 q-py-xl" v-animate-onscroll.repeat="'fadeInUp'">Phone</div>
                         </div>
                         <p class="text-black">
                             703-314-6010
@@ -175,30 +175,30 @@
 
 <script>
 import Resume from 'components/Resume.vue' 
-import Projects from 'components/Projects.vue'
+import Vue from 'vue'
+import VueAnimateOnScroll from 'vue-animate-onscroll'
+
+Vue.use(VueAnimateOnScroll)
 
 export default {
-  components: {
-    Resume,
-    Projects
-  },
-  data () {
-    return {
-      resume: false,
-      slide: 1,
-      scrollPosition: null,
-      aboutSectionTop: 0,
-      projectsSectionTop: 0,
-      contactSectionTop: 0
-    }
-  },
-  methods: {
-      increment() {
-          this.total++;
-          this.show = !this.show;
-          this.showNew = !this.showNew;
+    components: {
+        Resume
     },
-  }
+    data () {
+        return {
+            resume: false,
+            slide: 1,
+            scrollPosition: null,
+            aboutSectionTop: 0,
+            projectsSectionTop: 0,
+            contactSectionTop: 0
+        }
+    },
+    methods: {
+        fadeInUp(el) {
+            el.classList.add('fadeInUp')
+        }
+    }
     
 }
 </script>
@@ -284,10 +284,6 @@ export default {
     background: linear-gradient(311deg, #e100ff, #0015d4);
     top:0; 
     position: sticky;
-    
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
 }
 
 .projectHeader {
@@ -301,10 +297,6 @@ export default {
     background: linear-gradient(311deg, #ff7300, #ff01c8);
     top:0; 
     position: sticky;
-    
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
 }
 
 .contactHeader {
@@ -348,17 +340,30 @@ h1 {
     line-height: 1em;
 }
 
- .shrinkSVGicon {
+.shrinkSVGicon {
     width: 35px;
     color:white;
 } 
 
-.padding {
-    padding-left:160px;
-    padding-right:160px;
+@media screen and (max-width: 1023px) {
+    .aboutSectionColored{
+    height: 40vh;
+    top:initial;
+    }
+
+    .projectSectionColored{
+    height: 40vh;
+    top:initial;
+    }
+
+    .contactSectionColored{
+    height: 40vh;
+    top:initial;
+    }
+
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
     .padding {
     padding-left:50px;
     padding-right:50px;
@@ -367,6 +372,7 @@ h1 {
     h1 {
         font-size:13vh;
     }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -420,23 +426,4 @@ h1 {
     position: fixed;
   }
 }
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
 </style>

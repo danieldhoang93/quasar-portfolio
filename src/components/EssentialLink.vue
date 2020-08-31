@@ -6,8 +6,7 @@
   >
     <q-item-section
       v-if="icon"
-      avatar
-    >
+      avatar>
     
       <q-icon :name="icon" />
     </q-item-section>

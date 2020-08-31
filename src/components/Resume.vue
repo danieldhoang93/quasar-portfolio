@@ -290,6 +290,7 @@ p {
 .datingAppSection {
     text-decoration: none;
 }
+
 .media {
     -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
