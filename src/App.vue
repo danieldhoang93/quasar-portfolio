@@ -33,15 +33,15 @@ export default {
 @keyframes fadeinup {
   0% { 
     opacity: 0; 
-    transform: translateY(40px);
+    transform: translateY(50px);
   }
   30% { 
     opacity: 0.3; 
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   90% { 
     opacity: 1; 
-    transform: translateY(5px);
+    transform: translateY(10px);
   };
 }
 
