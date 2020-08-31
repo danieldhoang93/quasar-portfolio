@@ -36,7 +36,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 aboutSectionColored padding" id="aboutTop">
-                    <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                    <div v-animate-onscroll="{down: 'fadeInUp'}">
                         <div class="shadow text-h1 text-white q-py-xl">About</div>
                             <div class="shadow2">
                                 <p>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-12 col-md-6" id="aboutBottom">
                     <div class="aboutSection padding">
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow aboutHeader text-h1 q-py-xl">Me</div>
                             </div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="shadow aboutHeader text-h1 q-py-xl">Tech Stack</div>
                             <div class="q-pb-xl">
                                 <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
@@ -86,7 +86,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 projectSectionColored padding" id="projectsTop">
-                    <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                    <div v-animate-onscroll="{down: 'fadeInUp'}">
                         <div class="shadow text-h1 text-white q-py-xl">Projects</div>
                         <div class="shadow2">
                             <p>My portfolio of projects implementing various technologies.</p>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-12 col-md-6 q-pb-xl">
                     <div class="aboutSection padding">
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow projectHeader text-h1 q-py-xl">Instasham</div>
                             </div>
@@ -107,7 +107,7 @@
                         </div>
                         
                             
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow projectHeader text-h1 q-py-xl">World Tutor</div>
                             </div>
@@ -117,7 +117,7 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.</p>
                         </div>
 
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow projectHeader text-h1 q-py-xl">Plop</div>
                             </div>
@@ -127,7 +127,7 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.</p>
                         </div>
 
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow projectHeader text-h1 q-py-xl">People Swiper</div>
                             </div>
@@ -137,7 +137,7 @@
                             <p class="text-subtitle1 text-black q-pt-md smallWidth">A dating app where you can swipe through a list of people pulled in from a REST API.</p>
                         </div>
 
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow projectHeader text-h1 q-py-xl">Weather</div>
                             </div>
@@ -155,7 +155,7 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 contactSectionColored padding" id="contactTop">
-                    <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                    <div v-animate-onscroll="{down: 'fadeInUp'}">
                         <div class="shadow text-h1 text-white q-py-xl">Contact</div>
                         <div class="shadow2">
                             <p>Need to get in touch with me?</p>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="col-12 col-md-6 padding q-pb-xl">
                     <div class="aboutSection">
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
                             </div>
@@ -174,7 +174,7 @@
                             </p>
                         </div>
                         
-                        <div v-animate-onscroll.repeat="{down: 'fadeInUp'}">
+                        <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="coloredHeaderSection">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Phone</div>
                             </div>
