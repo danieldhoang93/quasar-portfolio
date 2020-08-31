@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="main-message header">
                     <div class="headerStuff">
-                        <h1 class="shadow" v-animate-onscroll.repeat="'fadeInUp'">Inspire Creativity</h1>
+                        <h1 class="shadow fadeInUp">Inspire Creativity</h1>
                         <div class="fadeInUp">
                             <a   flat
                             round
