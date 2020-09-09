@@ -174,14 +174,6 @@
                         <Weather>
                         </Weather>
                     </div>
-
-                    <div class="q-pa-md">
-                        <a href="https://please-love-me.netlify.app/#/" class="datingAppSection" target="_blank">
-                        <h2 class="removeBottomPadding text-center">Looking For Love?</h2>
-                            <img src="~/assets/patricia.jpg" class="shrinkSVGicon media q-pa-xl">
-                            <p class="text-caption">Looking for someone to spice up your life? Click here to open app my dating app, connecting you to hundreds of users from my own deployed API.</p>
-                        </a> 
-                    </div>
                 </div>
             </div>
 

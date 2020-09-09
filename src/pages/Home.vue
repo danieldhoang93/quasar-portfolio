@@ -229,7 +229,7 @@ export default {
     height: 100vh;
     position:relative;
     margin-top:-50px;
-    background: linear-gradient(311deg, #fb9d00, #8402fd, #0affc0);
+    background: linear-gradient(311deg, #fb9d00, #8402fd, #0affc0),url('../assets/lines.jpg');
     background-size: 200% 200%;
 
     -webkit-animation: AnimationName 10s ease infinite;

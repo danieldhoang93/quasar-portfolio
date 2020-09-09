@@ -84,11 +84,9 @@ export default {
         if (this.scrollPosition >= aboutSectionTop - 20)
         {
           document.getElementById("menuBtn").classList.add("coloredIcon");
-          document.getElementById("header").classList.add("headerBarColor");
         } 
         else {
           document.getElementById("menuBtn").classList.remove("coloredIcon");
-          document.getElementById("header").classList.remove("headerBarColor");
         }
     }
   },
@@ -114,10 +112,6 @@ export default {
 </script>
 
 <style lang="scss">
-.headerBarColor {
-  background:#131313;
-}
-
 .q-drawer {
   background: linear-gradient(311deg, #fb9d00, #8402fd, #0aceff);
   background-size: 120% 120%;
@@ -167,7 +161,7 @@ export default {
 }
 
 .coloredIcon {
-  color:#ffffff;
+  color:#a200ff;
 }
 
 .footer {
