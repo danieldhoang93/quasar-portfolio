@@ -3,9 +3,20 @@
         <section>
             <div class="col">
                 <div class="main-message header">
-                    <div class="headerStuff">
-                        <h1 class="shadow fadeInUp">Inspire Creativity</h1>
-                        <div class="fadeInUp">
+                    <div class="headerStuff shadow">
+                        <h1 class=" fadeInDown">Inspire</h1><br>
+                            <h1 class="fadeInLeft">C</h1>
+                            <h1 class="fadeInRight">r</h1>
+                            <h1 class="fadeInDown">e</h1>
+                            <h1 class="fadeInRight">a</h1>
+                            <h1 class="fadeInUp">t</h1>
+                            <h1 class="fadeInDown">i</h1>
+                            <h1 class="fadeInRight">v</h1>
+                            <h1 class="fadeInLeft">i</h1>
+                            <h1 class="fadeInUp">t</h1>
+                            <h1 class="fadeInRight q-pb-xl">y</h1>
+                        
+                        <div class="fadeInUp q-py-xl">
                             <a   flat
                             round
                             text-color="white"
@@ -36,45 +47,46 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 aboutSectionColored padding" id="aboutTop">
-                    <div v-animate-onscroll="{down: 'fadeInUp'}">
-                        <div class="shadow text-h1 text-white q-py-xl">About</div>
-                            <div class="shadow2">
-                                <p>
-                                    Some information about me, my resume, and technologies used.
-                                </p>
-                            </div>
+                    <div>
+                        <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll="{down: 'fadeInUp'}">About</div>
+                        <div class="shadow2" v-animate-onscroll="{down: 'fadeInRight'}">
+                            <p>
+                                Some information about me, my resume, and technologies used.
+                            </p>
+                        </div>
                     </div>
                     
                 </div>
                 <div class="col-12 col-md-6" id="aboutBottom">
                     <div class="aboutSection padding">
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
+                        <div>
+                            <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
                                 <div class="shadow aboutHeader text-h1 q-py-xl">Me</div>
                             </div>
-                            
-                            <img src="~/assets/head.png" class="circle shadow-24">
-                            <div class="smallWidth">
-                                <p class="text-black"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
-                                software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
+                            <div v-animate-onscroll="{down: 'fadeInRight'}">
+                                <img src="~/assets/head.png" class="circle shadow-24">
+                                <div class="smallWidth">
+                                    <p class="text-black"><br><br>My name is Daniel Hoang. I'm a self-driven developer with 4 years of demonstrated ability to excel in agile
+                                    software development, translating business requirements into high quality solutions by leveraging my creativity, innovation, and skillset to create unquestionable value.</p>
 
-                                <p class="text-black">
-                                I have a solid grasp in object oriented programming, full stack development technologies, robotic process automation, and a deep understanding of SQL and relational data models.
-                                </p><br><br>
-                            </div>
-                            <div class="q-pb-xl">
-                                <q-btn outline label="View Resume" color="purple" @click="resume = true" class="shadow-20"/>
-                                <q-dialog v-model="resume">  
-                                    <q-card class="resumeSize">
-                                        <Resume></Resume>
-                                    </q-card>
-                                </q-dialog>
+                                    <p class="text-black">
+                                    I have a solid grasp in object oriented programming, full stack development technologies, robotic process automation, and a deep understanding of SQL and relational data models.
+                                    </p><br><br>
+                                </div>
+                                <div class="q-pb-xl">
+                                    <q-btn outline label="View Resume" color="purple" @click="resume = true" class="shadow-20"/>
+                                    <q-dialog v-model="resume">  
+                                        <q-card class="resumeSize">
+                                            <Resume></Resume>
+                                        </q-card>
+                                    </q-dialog>
+                                </div>
                             </div>
                         </div>
 
                         <div v-animate-onscroll="{down: 'fadeInUp'}">
                             <div class="shadow aboutHeader text-h1 q-py-xl">Tech Stack</div>
-                            <div class="q-pb-xl">
+                            <div class="q-pb-xl" v-animate-onscroll="{down: 'fadeInRight'}">
                                 <img src="~/assets/techstack.jpg" class="fullWidth smallWidth"/>
                             </div>
                         </div>
@@ -86,9 +98,9 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 projectSectionColored padding" id="projectsTop">
-                    <div v-animate-onscroll="{down: 'fadeInUp'}">
-                        <div class="shadow text-h1 text-white q-py-xl">Projects</div>
-                        <div class="shadow2">
+                    <div>
+                        <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll="{down: 'fadeInUp'}">Projects</div>
+                        <div class="shadow2" v-animate-onscroll="{down: 'fadeInRight'}">
                             <p>My portfolio of projects implementing various technologies.</p>
                         </div> 
                     </div>
@@ -96,57 +108,17 @@
                 </div>
                 <div class="col-12 col-md-6 q-pb-xl">
                     <div class="aboutSection padding">
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Instasham</div>
+                        <div v-for="project in projects" v-bind:key="project.index">
+                            <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
+                                <div class="shadow projectHeader text-h1 q-py-xl">{{ project.name }}</div>
                             </div>
-                            <a href="http://instasham.netlify.app" target="_blank">
-                                <img src="~/assets/instasham.jpg" class="smallWidth fullWidth">
-                            </a>
-                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Instagram clone that allows you to capture or upload photos to the mainpage. Images are inserted and pulled from a Firestore database.</p>
-                        </div>
-                        
-                            
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">World Tutor</div>
+                            <div v-animate-onscroll="{down: 'fadeInRight'}">
+                                <a :href="project.link" target="_blank">
+                                <img :src="project.pic" class="smallWidth fullWidth">
+                                </a>
+                                <p class="text-subtitle1 text-black q-pt-md smallWidth">{{ project.description }}</p>
                             </div>
-                            <a href="http://worldtutor.netlify.app" target="_blank">
-                                <img src="~/assets/worldtutor.jpg" class="smallWidth fullWidth">
-                            </a>
-                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.</p>
                         </div>
-
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Plop</div>
-                            </div>
-                            <a href="http://ddh-plop.netlify.app" target="_blank">
-                                <img src="~/assets/bathroom_app.jpg" class="smallWidth fullWidth">
-                            </a>
-                            <p class="text-subtitle1 text-black q-pt-md smallWidth">Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.</p>
-                        </div>
-
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">People Swiper</div>
-                            </div>
-                            <a href="http://please-love-me.netlify.app" target="_blank">
-                                <img src="~/assets/swipe_app.jpg" class="smallWidth fullWidth">
-                            </a>
-                            <p class="text-subtitle1 text-black q-pt-md smallWidth">A dating app where you can swipe through a list of people pulled in from a REST API.</p>
-                        </div>
-
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
-                                <div class="shadow projectHeader text-h1 q-py-xl">Weather</div>
-                            </div>
-                            <a href="http://ddh-weather.netlify.app" target="_blank">
-                                <img src="~/assets/weather_app.jpg" class="smallWidth fullWidth">
-                            </a>
-                            <p class="text-subtitle1 text-black q-pt-md smallWidth">A simple weather app that shows you the current weather of anywhere you search. Coordinates are passed into an API to retrieve weather data.</p>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -155,9 +127,9 @@
         <section>
             <div class="row aboutSection">
                 <div class="col-12 col-md-6 col-lg-4 contactSectionColored padding" id="contactTop">
-                    <div v-animate-onscroll="{down: 'fadeInUp'}">
-                        <div class="shadow text-h1 text-white q-py-xl">Contact</div>
-                        <div class="shadow2">
+                    <div>
+                        <div class="shadow text-h1 text-white q-py-xl" v-animate-onscroll="{down: 'fadeInUp'}">Contact</div>
+                        <div class="shadow2" v-animate-onscroll="{down: 'fadeInRight'}">
                             <p>Need to get in touch with me?</p>
                         </div>
                     </div>
@@ -165,20 +137,20 @@
                 </div>
                 <div class="col-12 col-md-6 padding q-pb-xl">
                     <div class="aboutSection">
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
+                        <div>
+                            <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
                             </div>
-                            <p class="text-black">
+                            <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
                                 danieldhoang93@gmail.com
                             </p>
                         </div>
                         
-                        <div v-animate-onscroll="{down: 'fadeInUp'}">
-                            <div class="coloredHeaderSection">
+                        <div>
+                            <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Phone</div>
                             </div>
-                            <p class="text-black">
+                            <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
                                 703-314-6010
                             </p>
                         </div>
@@ -207,12 +179,47 @@ export default {
             scrollPosition: null,
             aboutSectionTop: 0,
             projectsSectionTop: 0,
-            contactSectionTop: 0
+            contactSectionTop: 0,
+            projects: [
+                {
+                    name: 'Instasham',
+                    link: 'http://instasham.netlify.app',
+                    pic: require('../assets/instasham.jpg'),
+                    description: 'Instagram clone that allows you to capture or upload photos to the mainpage. Images are inserted and pulled from a Firestore database.'
+                },
+                {
+                    name: 'World Tutor',
+                    link: 'http://worldtutor.netlify.app',
+                    pic: require('../assets/worldtutor.jpg'),
+                    description: 'Find tutors from other countries to teach you their language, and about their country and culture. The page layout, country information, and tutor information is pulled from a Mongo database.'
+                },
+                {
+                    name: 'Plop',
+                    link: 'http://ddh-plop.netlify.app',
+                    pic: require('../assets/bathroom_app.jpg'),
+                    description: 'Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.'
+                },
+                {
+                    name: 'People Swiper',
+                    link: 'http://please-love-me.netlify.app',
+                    pic: require('../assets/swipe_app.jpg'),
+                    description: 'A dating app where you can swipe through a list of people pulled in from a REST API.'
+                },
+                {
+                    name: 'Weather',
+                    link: 'http://ddh-weather.netlify.app',
+                    pic: require('../assets/weather_app.jpg'),
+                    description: 'A simple weather app that shows you the current weather of anywhere you search. Coordinates are passed into an API to retrieve weather data.'
+                }
+            ]
         }
     },
     methods: {
         fadeInUp(el) {
             el.classList.add('fadeInUp')
+        },
+        fadeInRight(el) {
+            el.classList.add('fadeInRight')
         }
     }
     
@@ -224,6 +231,9 @@ export default {
     animation: fadeinout 5s linear forwards;
 }	
 
+.displayInline {
+    display: inline-block;
+}
 .header {
     width:100%;
     height: 100vh;
@@ -243,6 +253,12 @@ export default {
       position:absolute;
       transform:translate(-50%,-50%);
       text-align:center;
+      display: inline-block;
+    }
+
+    h1 {
+        margin-top:0px;
+        margin-bottom:0px;
     }
 }
 
@@ -354,6 +370,7 @@ h1 {
     text-transform: uppercase;
     color:white; 
     line-height: 1em;
+    display: inline-block;
 }
 
 .shrinkSVGicon {

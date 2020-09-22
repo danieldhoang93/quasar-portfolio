@@ -45,6 +45,63 @@ export default {
   };
 }
 
+.fadeInDown {
+  animation: fadeindown 1s linear forwards;
+}	
+
+@keyframes fadeindown {
+  0% { 
+    opacity: 0; 
+    transform: translateY(-50px);
+  }
+  30% { 
+    opacity: 0.3; 
+    transform: translateY(-40px);
+  }
+  90% { 
+    opacity: 1; 
+    transform: translateY(-10px);
+  };
+}
+
+.fadeInLeft {
+  animation: fadeinleft 1s linear forwards;
+}	
+
+@keyframes fadeinleft {
+  0% { 
+    opacity: 0; 
+    transform: translateX(-50px);
+  }
+  30% { 
+    opacity: 0.3; 
+    transform: translateX(-40px);
+  }
+  90% { 
+    opacity: 1; 
+    transform: translateX(-10px);
+  };
+}
+
+.fadeInRight {
+  animation: fadeinright 1s linear forwards;
+}	
+
+@keyframes fadeinright {
+  0% { 
+    opacity: 0; 
+    transform: translateX(50px);
+  }
+  30% { 
+    opacity: 0.3; 
+    transform: translateX(40px);
+  }
+  90% { 
+    opacity: 1; 
+    transform: translateX(10px);
+  };
+}
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
