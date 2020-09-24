@@ -2,19 +2,19 @@
     <main>
         <section>
             <div class="col">
-                <div class="main-message header">
-                    <div class="headerStuff shadow">
-                        <h1 class=" fadeInDown">Inspire</h1><br>
-                            <h1 class="fadeInLeft">C</h1>
-                            <h1 class="fadeInRight">r</h1>
-                            <h1 class="fadeInDown">e</h1>
-                            <h1 class="fadeInRight">a</h1>
-                            <h1 class="fadeInUp">t</h1>
-                            <h1 class="fadeInDown">i</h1>
-                            <h1 class="fadeInRight">v</h1>
-                            <h1 class="fadeInLeft">i</h1>
-                            <h1 class="fadeInUp">t</h1>
-                            <h1 class="fadeInRight q-pb-xl">y</h1>
+                <div class="main-message header gradientBackground">
+                    <div class="headerStuff shadow gradientBackground q-pt-xl">
+                        <h1 class="fadeInUp">Inspire</h1><br>
+                        <h1 class="fadeInLeft">C</h1>
+                        <h1 class="fadeInRight">r</h1>
+                        <h1 class="fadeInDown">e</h1>
+                        <h1 class="fadeInRight">a</h1>
+                        <h1 class="fadeInUp">t</h1>
+                        <h1 class="fadeInDown">i</h1>
+                        <h1 class="fadeInRight">v</h1>
+                        <h1 class="fadeInLeft">i</h1>
+                        <h1 class="fadeInUp">t</h1>
+                        <h1 class="fadeInRight q-pb-xl">y</h1>
                         
                         <div class="fadeInUp q-py-xl">
                             <a   flat
@@ -234,26 +234,31 @@ export default {
 .displayInline {
     display: inline-block;
 }
-.header {
-    width:100%;
-    height: 100vh;
-    position:relative;
-    margin-top:-50px;
+
+.gradientBackground {
     background: linear-gradient(311deg, #fb9d00, #8402fd, #0affc0),url('../assets/lines.jpg');
     background-size: 200% 200%;
 
     -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
+}
+
+.header {
+    width:100%;
+    height:100vh;
+    position:relative;
+    margin-top:-50px;
 
     .headerStuff {
-      max-width:90%;
-      left:50%;
-      top:50%;
-      position:absolute;
-      transform:translate(-50%,-50%);
-      text-align:center;
-      display: inline-block;
+        max-width:90%;
+        left:50%;
+        top:50%;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        text-align:center;
+        display: inline-block;
+        width:calc(200px + 40vw);
     }
 
     h1 {
@@ -403,7 +408,7 @@ h1 {
     }
 
     h1 {
-        font-size:13vh;
+        font-size:11vh;
     }
 
 }
