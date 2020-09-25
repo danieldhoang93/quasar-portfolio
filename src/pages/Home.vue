@@ -408,7 +408,7 @@ h1 {
     }
 
     h1 {
-        font-size:11vh;
+        font-size:9vh;
     }
 
 }
