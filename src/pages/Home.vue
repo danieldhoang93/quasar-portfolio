@@ -38,7 +38,6 @@
                             <q-tooltip content-class="bg-primary toolTipText">Linkedin</q-tooltip>
                             </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -142,8 +141,17 @@
                                 <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
                             </div>
                             <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
-                                danieldhoang93@gmail.com
+                                To: danieldhoang93@gmail.com
                             </p>
+
+                            <div v-animate-onscroll="{down: 'fadeInRight'}">
+                                <q-input square outlined v-model="fromEmail" label="From" type="email" class="q-pb-md"/>
+                                <q-input square outlined v-model="subject" label="Subject" autogrow class="q-pb-md"/>
+                                <q-input square outlined v-model="message" label="Message" autogrow class="q-pb-md"/>
+                                <q-btn @click="sendEmail">Send Email</q-btn>
+                            </div>
+                                
+                            
                         </div>
                         
                         <div>
@@ -165,7 +173,7 @@
 import Resume from 'components/Resume.vue' 
 import Vue from 'vue'
 import VueAnimateOnScroll from 'vue-animate-onscroll'
-
+import axios from 'axios';
 Vue.use(VueAnimateOnScroll)
 
 export default {
@@ -180,6 +188,9 @@ export default {
             aboutSectionTop: 0,
             projectsSectionTop: 0,
             contactSectionTop: 0,
+            subject: '',
+            fromEmail: '',
+            message: '',
             projects: [
                 {
                     name: 'Instasham',
@@ -220,6 +231,19 @@ export default {
         },
         fadeInRight(el) {
             el.classList.add('fadeInRight')
+        },
+        sendEmail() {
+            const data = {
+                email: this.fromEmail,
+                message: this.message,
+                subject: this.subject
+            }
+
+            this.$axios.post(`${process.env.API}/email`, data, () => {
+                //console.log("email sent");
+            }).catch(err => {
+                console.log(err);
+            })
         }
     }
     
@@ -235,20 +259,10 @@ export default {
     display: inline-block;
 }
 
-.gradientBackground {
-    background: linear-gradient(311deg, #fb9d00, #8402fd, #0affc0),url('../assets/lines.jpg');
-    background-size: 200% 200%;
-
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-}
-
 .header {
     width:100%;
     height:100vh;
     position:relative;
-    margin-top:-50px;
 
     .headerStuff {
         max-width:90%;

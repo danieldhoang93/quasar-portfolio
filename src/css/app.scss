@@ -1,1 +1,11 @@
 // app global css in SCSS form
+
+.gradientBackground {
+    background: linear-gradient(311deg, #fb9d00, #8402fd, #0affc0),url('../assets/lines.jpg');
+    background-size: 200% 200%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    margin-top:-50px;
+}

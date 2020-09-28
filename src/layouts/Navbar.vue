@@ -64,7 +64,7 @@ export default {
 
   },
   mounted() {
-     if (!this.userDetails.userid) {
+     if (this.userDetails.userid) {
       this.essentialLinks[1].title = "Log Out";
       this.essentialLinks[1].icon = "logout";
       this.essentialLinks[1].link = "";

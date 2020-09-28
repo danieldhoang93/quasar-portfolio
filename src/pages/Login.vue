@@ -1,5 +1,5 @@
 <template>
-  <div class="col elementToFadeInAndOut text-center header">
+  <div class="col elementToFadeInAndOut text-center header gradientBackground">
     <div class="signIn text-center headerStuff shadows">
       <router-link to="/" class="headerFont"><h1>DDH</h1></router-link>
       
@@ -20,10 +20,18 @@
       
       <q-checkbox v-model="remember" label="Remember Me" style="float:left;" dark class="text-white rememberBox"/>
 
-      <div class="q-py-md inner">
+      <div class="inner">
         <q-btn color="white text-purple" @click="signIn()" class="signInBtn">{{signInBtnText}}</q-btn>
       </div>
 
+      <div class="q-pb-md inner">
+          <q-btn color="white" text-color="black" v-if="!isSignIn" no-caps 
+          icon="img:https://img.icons8.com/color/100/000000/google-logo.png" 
+          label="Sign in with Google" @click="handleClickSignIn" class="signInBtn"/>
+      </div>
+      <div class="q-pr-sm">
+          <q-btn color="white" text-color="black" no-caps v-if="isSignIn" label="Sign Out" @click="handleClickSignOut"/>
+        </div>
       <div>
         <div style="float:left;">
           <q-btn padding="sm" flat color="white" @click="register()">{{registerButtonText}}</q-btn>
@@ -36,6 +44,14 @@
 </template>
 
 <script>
+import GAuth from 'vue-google-oauth2'
+import Vue from 'vue'
+const gauthOption = {
+  clientId: '996384979999-9mrcee2egijvsd4nagmgl8ggtiq2pr4b.apps.googleusercontent.com',
+  scope: 'email',
+  prompt: 'consent'
+}
+Vue.use(GAuth, gauthOption)
 import { mapActions } from 'vuex'
 export default {
   data () {
@@ -51,7 +67,9 @@ export default {
       dense: false,
       isRegister: false,
       remember: false,
-      registerButtonText: "Register"
+      registerButtonText: "Register",
+      isInit: false,
+      isSignIn: false,
     }
   },
   methods: {
@@ -83,7 +101,62 @@ export default {
       }
       
       console.log(this.signInBtnText);
+    },
+    async handleClickUpdateScope() {
+      const option = new window.gapi.auth2.SigninOptionsBuilder();
+      option.setScope("email https://www.googleapis.com/auth/drive.file");
+      const googleUser = this.$gAuth.GoogleAuth.currentUser.get();
+      try {
+        await googleUser.grant(option);
+        console.log("success");
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async handleClickSignIn() {
+      try {
+        const googleUser = await this.$gAuth.signIn();
+        if (!googleUser) {
+          return null;
+        }
+        console.log("googleUser", googleUser);
+        console.log("getId", googleUser.getId());
+        console.log("getBasicProfile", googleUser.getBasicProfile());
+        console.log("getAuthResponse", googleUser.getAuthResponse());
+        console.log(
+          "getAuthResponse",
+          this.$gAuth.GoogleAuth.currentUser.get().getAuthResponse()
+        );
+        this.isSignIn = this.$gAuth.isAuthorized;
+      } catch (error) {
+        //on fail do something
+        console.error(error);
+        return null;
+      }
+      if (this.userType === "teacher") {
+          this.slide++;
+      }
+      else {
+          this.slide = 4;
+      }
+      
+    },
+    async handleClickSignOut() {
+      try {
+        await this.$gAuth.signOut();
+        this.isSignIn = this.$gAuth.isAuthorized;
+      } catch (error) {
+        console.error(error);
+      }
     }
+  },
+  created() {
+    let that = this;
+    let checkGauthLoad = setInterval(function () {
+      that.isInit = that.$gAuth.isInit;
+      that.isSignIn = that.$gAuth.isAuthorized;
+      if (that.isInit) clearInterval(checkGauthLoad);
+    }, 1000);
   }
 }
 </script>
