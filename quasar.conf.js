@@ -7,7 +7,7 @@
 // https://quasar.dev/quasar-cli/quasar-conf-js
 
 let API_LOCAL = 'http://localhost:5000';
-let API_PROD = 'https://ddhoang-portfolio.herokuapp.com/';
+let API_PROD = 'https://ddhoang-portfolio.herokuapp.com';
 
 module.exports = function (/* ctx */) {
   return {
