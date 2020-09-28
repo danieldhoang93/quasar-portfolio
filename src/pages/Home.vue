@@ -143,14 +143,14 @@
                             <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
                                 To: danieldhoang93@gmail.com
                             </p>
-
+<!--
                             <div v-animate-onscroll="{down: 'fadeInRight'}">
                                 <q-input square outlined v-model="fromEmail" label="From" type="email" class="q-pb-md"/>
                                 <q-input square outlined v-model="subject" label="Subject" autogrow class="q-pb-md"/>
                                 <q-input square outlined v-model="message" label="Message" autogrow class="q-pb-md"/>
                                 <q-btn @click="sendEmail">Send Email</q-btn>
                             </div>
-                                
+                                -->
                             
                         </div>
                         
