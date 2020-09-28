@@ -47,7 +47,7 @@
 import GAuth from 'vue-google-oauth2'
 import Vue from 'vue'
 const gauthOption = {
-  clientId: '996384979999-c85flm6pkoln0vmoi2232v3sgr9aotcp.apps.googleusercontent.com',
+  clientId: '996384979999-3t2v5uhnamn8f5n3md10pa7lllkjvg16.apps.googleusercontent.com',
   scope: 'email',
   prompt: 'consent'
 }
