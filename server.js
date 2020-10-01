@@ -25,6 +25,10 @@ app.post('/email', (req, res) => {
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD
+    },
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false
     }
   })
 
