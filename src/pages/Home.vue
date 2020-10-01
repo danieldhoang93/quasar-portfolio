@@ -143,14 +143,13 @@
                             <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
                                 To: danieldhoang93@gmail.com
                             </p>
-<!--
+
                             <div v-animate-onscroll="{down: 'fadeInRight'}">
                                 <q-input square outlined v-model="fromEmail" label="From" type="email" class="q-pb-md"/>
                                 <q-input square outlined v-model="subject" label="Subject" autogrow class="q-pb-md"/>
                                 <q-input square outlined v-model="message" label="Message" autogrow class="q-pb-md"/>
                                 <q-btn @click="sendEmail">Send Email</q-btn>
                             </div>
-                                -->
                             
                         </div>
                         
@@ -208,7 +207,13 @@ export default {
                     name: 'Plop',
                     link: 'http://ddh-plop.netlify.app',
                     pic: require('../assets/bathroom_app.jpg'),
-                    description: 'Looking for the nicest nearby bathroom to use? Find the best place to handle <span class="text-italic">your</span> business. Google Maps APIs are used to locate the user, and all nearby places with their information.'
+                    description: 'Looking for the nicest nearby bathroom to use? Find the best place to handle your business. Google Maps APIs are used to locate the user, and all nearby places with their information.'
+                },
+                {
+                    name: 'Dreams',
+                    link: 'http://dreams-20200926181243-hostingbucket-dev.s3-website-us-east-1.amazonaws.com/#/',
+                    pic: require('../assets/dreams.jpg'),
+                    description: 'Share your wildest dreams anonymously. This app uses AWS Amplify and several AWS cloud services, such as, Cognito, API Gateway, Lambda Functions, and DynamoDb'
                 },
                 {
                     name: 'People Swiper',

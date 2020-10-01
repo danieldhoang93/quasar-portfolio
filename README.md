@@ -1,3 +1,14 @@
 # Quasar App (quasar-portfolio)
 
-my portfolio/resume website built using vue.js, quasar, and scss
+<div>My portfolio/resume website.</div>
+
+<div>The site is developed with the following technologies:</div>
+<ul>
+    <li>Vue</li>
+    <li>Quasar</li>
+    <li>Node.js</li>
+    <li>Express</li>
+</ul>
+
+
+
