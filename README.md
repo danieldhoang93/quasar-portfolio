@@ -8,6 +8,8 @@
     <li>Quasar</li>
     <li>Node.js</li>
     <li>Express</li>
+    <li>Frontend hosted on Netlify</li>
+    <li>Backend hosted on Heroku</li>
 </ul>
 
 
