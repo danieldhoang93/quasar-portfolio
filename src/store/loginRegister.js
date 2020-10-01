@@ -52,7 +52,6 @@ const actions = {
               firebaseDb.ref('users/' + userId).once('value', snapshot => {
                 
                 let userDetails = snapshot.val()
-                console.log('user deets', userDetails)
                 commit('setUserDetails', {
                     firstName: userDetails.firstName,
                     lastName: userDetails.lastName,
