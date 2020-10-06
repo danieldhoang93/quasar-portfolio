@@ -140,7 +140,8 @@
                             <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
                             </div>
-                                                        
+
+                            <!--                         
                             <div class="q-gutter-md" v-animate-onscroll="{down: 'fadeInRight'}">
                                 <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
                                     To: danieldhoang93@gmail.com
@@ -152,6 +153,7 @@
                                 </div>
                                 <q-btn outline color="orange" @click="sendEmail">Send Email</q-btn>
                             </div>
+                            -->
                         </div>
                         
                         <div>
