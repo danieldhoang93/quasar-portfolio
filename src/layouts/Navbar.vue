@@ -43,7 +43,7 @@
     </q-page-container>
 
     <div class="footer">
-      <p class="headerText text-white" style="font-family: 'Montserrat', sans-serif;">© Untitled. All rights reserved.</p>
+      <p class="centerText text-white" style="font-family: 'Montserrat', sans-serif;">© Untitled. All rights reserved.</p>
     </div>  
   </q-layout>
 </template>
@@ -164,12 +164,4 @@ export default {
   color:#a200ff;
 }
 
-.footer {
-    background:#131313;
-    height:100px;
-    width: 100%;
-    position:relative;
-    left: 0;
-    bottom: 0;
-}
 </style>

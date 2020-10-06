@@ -296,58 +296,61 @@ p {
 
 @media screen and (max-width: 1830px) {
     h2 {
-     font-size: 75px;
-     margin-bottom:50px;
+        font-size: 75px;
+        margin-bottom:50px;
     }
 
     h1 {
-    font-size: 100px;
-    margin-bottom:20px;
+        font-size: 100px;
+        margin-bottom:20px;
     }
 }
 
 @media screen and (max-width: 1600px) {
     h2 {
-     font-size: 75px;
-     margin-bottom:50px;
+        font-size: 75px;
+        margin-bottom:50px;
     }
-
 }
 
 @media screen and (max-width: 1300px) {
     h2 {
-     font-size: 75px;
-     margin-bottom:50px;
+        font-size: 75px;
+        margin-bottom:50px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     h2 {
-     font-size: 75px;
-     margin-bottom:50px;
+        font-size: 75px;
+        margin-bottom:50px;
     }
-    
+    h3 {
+        font-size:50px;
+    }
 }
 
 @media screen and (max-width: 1025px) {
     h2 {
-     font-size: 70px;
-     margin-bottom:50px;
+        font-size: 70px;
+        margin-bottom:50px;
     }
+
    .row > div:nth-child(1) {
- padding: 10px 15px;
- border-right:0px;
- }
+        padding: 10px 15px;
+        border-right:0px;
+    }
 }
 
 @media screen and (max-width: 690px) {
     h2 {
-     font-size: 70px;
-     margin-bottom:50px;
+        font-size: 70px;
+        margin-bottom:50px;
     }
+    
    .row > div:nth-child(1) {
-    padding: 10px 15px;
-    border-right:0px;
+        padding: 10px 15px;
+        border-right:0px;
     }
 
     img.headerText {

@@ -140,17 +140,18 @@
                             <div class="coloredHeaderSection" v-animate-onscroll="{down: 'fadeInUp'}">
                                 <div class="shadow contactHeader text-h1 q-py-xl">Email</div>
                             </div>
-                            <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
-                                To: danieldhoang93@gmail.com
-                            </p>
-                            <!--
-                            <div v-animate-onscroll="{down: 'fadeInRight'}">
-                                <q-input square outlined v-model="fromEmail" label="From" type="email" class="q-pb-md"/>
-                                <q-input square outlined v-model="subject" label="Subject" autogrow class="q-pb-md"/>
-                                <q-input square outlined v-model="message" label="Message" autogrow class="q-pb-md"/>
-                                <q-btn @click="sendEmail">Send Email</q-btn>
+                                                        
+                            <div class="q-gutter-md" v-animate-onscroll="{down: 'fadeInRight'}">
+                                <p class="text-black" v-animate-onscroll="{down: 'fadeInRight'}">
+                                    To: danieldhoang93@gmail.com
+                                </p>
+                                <q-input square outlined v-model="fromEmail" label="From" type="email"/>
+                                <q-input square outlined v-model="subject" label="Subject" autogrow/>
+                                <div>
+                                   <q-editor toolbar-toggle-color="orange" v-model="message" min-height="10rem"/> 
+                                </div>
+                                <q-btn outline color="orange" @click="sendEmail">Send Email</q-btn>
                             </div>
-                            -->
                         </div>
                         
                         <div>
@@ -238,18 +239,43 @@ export default {
             el.classList.add('fadeInRight')
         },
         sendEmail() {
+            this.showLoading();
             const data = {
                 email: this.fromEmail,
                 message: this.message,
                 subject: this.subject
             }
 
-        
-            this.$axios.post(`${process.env.API}/email`, data, () => {
-                //console.log("email sent");
+            //post to email route
+            this.$axios.post(`${process.env.API}/email`, data).then(response => {
+
+                console.log("he", this.fromEmail)
             }).catch(err => {
                 console.log(err);
             })
+
+            this.fromEmail = '';
+            this.message = '';
+            this.subject = '';
+        },
+        showLoading() {
+            this.$q.loading.show({
+                spinnerColor: 'red-5',
+                message: 'Sending email',
+                messageColor: 'red-5'
+            })
+
+            // hiding in 2s
+            this.timer = setTimeout(() => {
+                this.$q.loading.hide()
+                this.timer = void 0
+            }, 1000)
+        }
+    },
+    beforeDestroy () {
+        if (this.timer !== void 0) {
+        clearTimeout(this.timer)
+        this.$q.loading.hide()
         }
     }
     
